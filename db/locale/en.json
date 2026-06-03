@@ -1,0 +1,567 @@
+{
+  "5fc6144b0b735e7b024c76e7": {
+    "Description": "SCAV - Stasik",
+    "Name": "SCAV - Stasik",
+    "ShortName": "SCAV - Stasik"
+  },
+  "5fb5297a0359a84b77066e56": {
+    "Description": "Cultist Warrior 1",
+    "Name": "Cultist Warrior 1",
+    "ShortName": "Cultist Warrior 1"
+  },
+  "5fc614390b735e7b024c76e6": {
+    "Description": "SCAV - Misha",
+    "Name": "SCAV - Misha",
+    "ShortName": "SCAV - Misha"
+  },
+  "5d28b03e86f7747f7e69ab8a": {
+    "Description": "Killa",
+    "Name": "Killa",
+    "ShortName": "Killa"
+  },
+  "5d28afe786f774292668618d": {
+    "Description": "The one and the only - The Cig Scav",
+    "Name": "Cig Scav",
+    "ShortName": "Cig Scav"
+  },
+  "5fc614290b735e7b024c76e5": {
+    "Description": "SCAV - Drozd",
+    "Name": "SCAV - Drozd",
+    "ShortName": "SCAV - Drozd"
+  },
+  "5fc613c80b735e7b024c76e2": {
+    "Description": "SCAV - Yarik",
+    "Name": "SCAV - Yarik",
+    "ShortName": "SCAV - Yarik"
+  },
+  "5d5e805d86f77439eb4c2d0e": {
+    "Description": "Glukhar",
+    "Name": "Glukhar",
+    "ShortName": "Glukhar"
+  },
+  "5fb52a3a1c69e5198e234118": {
+    "Description": "Cultist Priest",
+    "Name": "Cultist Priest",
+    "ShortName": "Cultist Priest"
+  },
+  "5d28b01486f77429242fc898": {
+    "Description": "Reshala",
+    "Name": "Reshala",
+    "ShortName": "Reshala"
+  },
+  "5e99767c86f7741ac7399393": {
+    "Description": "Sanitar",
+    "Name": "Sanitar",
+    "ShortName": "Sanitar"
+  },
+  "5cc2e4d014c02e000d0115f8": {
+    "Description": "SCAV - Samogon",
+    "Name": "SCAV - Samogon",
+    "ShortName": "SCAV - Samogon"
+  },
+  "5f68c4c217d579077152a252": {
+    "Description": "SCAV - Mozg",
+    "Name": "SCAV - Mozg",
+    "ShortName": "SCAV - Mozg"
+  },
+  "5fc615460b735e7b024c76eb": {
+    "Description": "Reshala",
+    "Name": "Reshala",
+    "ShortName": "Reshala"
+  },
+  "5fb52a537b5d1342ee24bd57": {
+    "Description": "Cultist Warrior 2",
+    "Name": "Cultist Warrior 2",
+    "ShortName": "Cultist Warrior 2"
+  },
+  "5f68c4a7c174a17c0f4c8945": {
+    "Description": "SCAV - Kot",
+    "Name": "SCAV - Kot",
+    "ShortName": "SCAV - Kot"
+  },
+  "5cde9ff17d6c8b0474535daa": {
+    "Description": "SCAV - Tankist",
+    "Name": "SCAV - Tankist",
+    "ShortName": "SCAV - Tankist"
+  },
+  "5fc614130b735e7b024c76e4": {
+    "Description": "SCAV - Sanya",
+    "Name": "SCAV - Sanya",
+    "ShortName": "SCAV - Sanya"
+  },
+  "5fc613e10b735e7b024c76e3": {
+    "Description": "SCAV - Seva",
+    "Name": "SCAV - Seva",
+    "ShortName": "SCAV - Seva"
+  },
+  "5fc6155b0b735e7b024c76ec": {
+    "Description": "Glukhar",
+    "Name": "Glukhar",
+    "ShortName": "Glukhar"
+  },
+  "5fc615710b735e7b024c76ed": {
+    "Description": "Sanitar",
+    "Name": "Sanitar",
+    "ShortName": "Sanitar"
+  },
+  "628b57d800f171376e7b2634": {
+    "Description": "Birdeye",
+    "Name": "Birdeye",
+    "ShortName": "Birdeye"
+  },
+  "62875ad50828252c7a28b95c": {
+    "Description": "Knight",
+    "Name": "Knight",
+    "ShortName": "Knight"
+  },
+  "6287b0d239d8207cb27d66c7": {
+    "Description": "Big Pipe",
+    "Name": "Big Pipe",
+    "ShortName": "Big Pipe"
+  },
+  "66a25a47f878d663dbe9c302": {
+    "Description": "Tagilla",
+    "Name": "Tagilla",
+    "ShortName": "Tagilla"
+  },
+  "636129784aa74b8fe30ab418": {
+    "Description": "Zryachiy",
+    "Name": "Zryachiy",
+    "ShortName": "Zryachiy"
+  },
+  "64809e3077c11aeac5078e3c": {
+    "Description": "Kaban",
+    "Name": "Kaban",
+    "ShortName": "Kaban"
+  },
+  "654b5ed58558fd71f97254f4": {
+    "Description": "Kollontay",
+    "Name": "Kollontay",
+    "ShortName": "Kollontay"
+  },
+  "66a258ca131ef292c721e9fa": {
+    "Description": "Cultist",
+    "Name": "Cultist Priest Top",
+    "ShortName": ""
+  },
+  "66a258d44027130800bb9978": {
+    "Description": "Cultist",
+    "Name": "Cultist Warrior Top",
+    "ShortName": ""
+  },
+  "66a25885fe2cf952aa1fe3b5": {
+    "Description": "Guard",
+    "Name": "GUARD Black T-Shirt",
+    "ShortName": ""
+  },
+  "66a2583d4e0569aaa7014018": {
+    "Description": "Guard",
+    "Name": "GUARD Police Jacket",
+    "ShortName": ""
+  },
+  "66a25865a63c1499f7c11ceb": {
+    "Description": "Boss",
+    "Name": "Shturman's Parka",
+    "ShortName": ""
+  },
+  "66a2586fff1bb6e3031a1eea": {
+    "Description": "Boss",
+    "Name": "Shturman's Parka (Hood Down)",
+    "ShortName": ""
+  },
+  "66a25847bf2113d103de3045": {
+    "Description": "Guard",
+    "Name": "GUARD Security Sweater",
+    "ShortName": ""
+  },
+  "66a25855b8ac917bfc1cfd52": {
+    "Description": "Raider",
+    "Name": "RAIDER Jacket",
+    "ShortName": ""
+  },
+  "66a25833df0de64791228fe9": {
+    "Description": "Boss",
+    "Name": "Reshala's Leather Jacket",
+    "ShortName": ""
+  },
+  "66a2588f5c3d6f142b3a0e91": {
+    "Description": "Guard",
+    "Name": "GUARD Black T-Shit (With Tatoos)",
+    "ShortName": ""
+  },
+  "66a25897df999bf137f59a7b": {
+    "Description": "Guard",
+    "Name": "GUARD Husky Hardshell Jacket",
+    "ShortName": ""
+  },
+  "66a258b857b4dbe5bb3f6a35": {
+    "Description": "Boss",
+    "Name": "Sanitar's Medical Jacket",
+    "ShortName": ""
+  },
+  "66a258ffd44d4c4b708cf7fc": {
+    "Description": "Scav",
+    "Name": "SCAV Yellow Coat",
+    "ShortName": ""
+  },
+  "66a258a02d7e21a0f4a65671": {
+    "Description": "Guard",
+    "Name": "GUARD Gorka 4 Top",
+    "ShortName": ""
+  },
+  "66a25823bf3615f9a963992a": {
+    "Description": "Scav",
+    "Name": "SCAV Raincoat",
+    "ShortName": ""
+  },
+  "66a2580d60dc871214f6c609": {
+    "Description": "Scav",
+    "Name": "SCAV Top (var. 2)",
+    "ShortName": ""
+  },
+  "66a2587c9c2b37866d4a934f": {
+    "Description": "Boss",
+    "Name": "Glukhar's T-Shirt With PACA Top",
+    "ShortName": ""
+  },
+  "66a258e3c6b9ee37e81abcd2": {
+    "Description": "Boss",
+    "Name": "Tagilla's Chest",
+    "ShortName": ""
+  },
+  "66a2596c0db81d88c4f7c68c": {
+    "Description": "Scav",
+    "Name": "SCAV Military Pants",
+    "ShortName": ""
+  },
+  "66a2581a8e674d5e474a0273": {
+    "Description": "Scav",
+    "Name": "SCAV Jacket",
+    "ShortName": ""
+  },
+  "66a25802209d339b12dab6aa": {
+    "Description": "Scav",
+    "Name": "SCAV Top (var. 1)",
+    "ShortName": ""
+  },
+  "66a258c29f5820847f97dda3": {
+    "Description": "Scav",
+    "Name": "SCAV Motocross Jacket",
+    "ShortName": ""
+  },
+  "66a258a9d499bd2e3ae151ca": {
+    "Description": "Scav",
+    "Name": "SCAV Meteor Jacket",
+    "ShortName": ""
+  },
+  "66a258fb87757fff782ac456": {
+    "Description": "Scav",
+    "Name": "SCAV Bomber Jacket",
+    "ShortName": ""
+  },
+  "66a258b00dbcfbc5da693c7b": {
+    "Description": "Scav",
+    "Name": "SCAV Russia Jacket",
+    "ShortName": ""
+  },
+  "66a258debfe22e94946ad169": {
+    "Description": "Scav",
+    "Name": "SCAV Under Armour Jacket",
+    "ShortName": ""
+  },
+  "66a258d9b62c6a1374bdb20a": {
+    "Description": "Scav",
+    "Name": "SCAV Rain Parka",
+    "ShortName": ""
+  },
+  "66a2591e3761c0c6ee3e120e": {
+    "Description": "Boss",
+    "Name": "Big Pipe's Quarter-Zip Shirt",
+    "ShortName": ""
+  },
+  "66a2592a6b1df847bc3524ac": {
+    "Description": "Boss",
+    "Name": "Birdeye's Sweater & Shemagh",
+    "ShortName": ""
+  },
+  "66a259095102e737db621905": {
+    "Description": "Boss",
+    "Name": "Knight's Quarter-Zip Shirt & Patches",
+    "ShortName": ""
+  },
+  "66a2593329bb1f6f5165bc55": {
+    "Description": "Boss",
+    "Name": "Zryachiy's Ghillie Suit Top",
+    "ShortName": ""
+  },
+  "68ee81c0920831b641080d7f": {
+    "Description": "Boss",
+    "Name": "Zryachiy's Ghillie Suit Top (Hood Down)",
+    "ShortName": ""
+  },
+  "66a25936fa20fd14b0d4b0ad": {
+    "Description": "Scav",
+    "Name": "SCAV \"Victory\" Jacket",
+    "ShortName": ""
+  },
+  "66a2593faae89d275adbb738": {
+    "Description": "Boss",
+    "Name": "Kaban's Pullover & Long Coat",
+    "ShortName": ""
+  },
+  "66a2594ae55dd274d4020892": {
+    "Description": "Scav",
+    "Name": "SCAV Bundeswehr Feldparka",
+    "ShortName": ""
+  },
+  "66a2595e5f3b014c96666890": {
+    "Description": "Guard",
+    "Name": "SCAV Leather Mobster Jacket",
+    "ShortName": ""
+  },
+  "66a25966f78c597fec6c639b": {
+    "Description": "Guard",
+    "Name": "SCAV Leather Mobster Jacket (Zipped)",
+    "ShortName": ""
+  },
+  "66a25954c8242edbdc70879f": {
+    "Description": "Boss",
+    "Name": "Kollontay's Armored Blue Tiger Top",
+    "ShortName": ""
+  },
+  "6764d55226c607ad42f6d6c0": {
+    "Description": "Boss",
+    "Name": "Partisan's Winter Jacket",
+    "ShortName": ""
+  },
+  "66a2599a1de9ee22aba0cdb8": {
+    "Description": "Cultist",
+    "Name": "Cultist Pants 1",
+    "ShortName": ""
+  },
+  "66a2599e50651d1eeadc3440": {
+    "Description": "Cultist",
+    "Name": "Cultist Pants 2",
+    "ShortName": ""
+  },
+  "66a2597271700369d21ee70d": {
+    "Description": "Scav",
+    "Name": "SCAV Gorka Pants",
+    "ShortName": ""
+  },
+  "66a2597be8f7c15e44443955": {
+    "Description": "Raider",
+    "Name": "RAIDER Pants",
+    "ShortName": ""
+  },
+  "66a259758a0d001755ee5986": {
+    "Description": "Boss",
+    "Name": "Reshala's Kryptek Pants",
+    "ShortName": ""
+  },
+  "66a2598ea4dc2d30842dcead": {
+    "Description": "Boss",
+    "Name": "Sanitar's Rain Boots",
+    "ShortName": ""
+  },
+  "66a259ab87e544e8902409f6": {
+    "Description": "Scav",
+    "Name": "SCAV Izlom Pants",
+    "ShortName": ""
+  },
+  "66a25985cfaa5daddf043475": {
+    "Description": "Guard",
+    "Name": "GUARD Gorka 4 Pants",
+    "ShortName": ""
+  },
+  "66a2598856e58dae9c33bf82": {
+    "Description": "Guard",
+    "Name": "GUARD Flora Pants",
+    "ShortName": ""
+  },
+  "66a25981d8ce351fdaf4ee13": {
+    "Description": "Boss",
+    "Name": "Shturman's DPM Pants",
+    "ShortName": ""
+  },
+  "66a25978a06a7358be88d72e": {
+    "Description": "Guard",
+    "Name": "GUARD MVD Pants (Gray-Blue Kamysh)",
+    "ShortName": ""
+  },
+  "66a2597f7125561227c5b383": {
+    "Description": "Boss",
+    "Name": "Glukhar's Black Jeans",
+    "ShortName": ""
+  },
+  "66a259a1fa8d47b051f9953f": {
+    "Description": "Raider",
+    "Name": "RAIDER Taclite Pro Ripstop Pants",
+    "ShortName": ""
+  },
+  "66a259a5ec21b527cd28ca9b": {
+    "Description": "Boss",
+    "Name": "Tagilla's Crye G3 Combat Pants (Multicam Black)",
+    "ShortName": ""
+  },
+  "66a2596ecd2a6fa35961de0a": {
+    "Description": "Scav",
+    "Name": "SCAV Jeans",
+    "ShortName": ""
+  },
+  "66a25998d89be9345cde182b": {
+    "Description": "Scav",
+    "Name": "SCAV Drystch Pants",
+    "ShortName": ""
+  },
+  "66a25991764ca0c5abcd81d3": {
+    "Description": "Scav",
+    "Name": "SCAV Rain Boots",
+    "ShortName": ""
+  },
+  "66a259955dc2644097ac360b": {
+    "Description": "Scav",
+    "Name": "SCAV Browning Wasatch Pants",
+    "ShortName": ""
+  },
+  "66a259aee7ed0609ca9fefa9": {
+    "Description": "Boss",
+    "Name": "Adik Tracksuit Pants",
+    "ShortName": ""
+  },
+  "66a259a85409b62fcc979f96": {
+    "Description": "Scav",
+    "Name": "SCAV \"Bro\" Running Pants",
+    "ShortName": ""
+  },
+  "66a2598bce7b791278ac6b05": {
+    "Description": "Scav",
+    "Name": "SCAV Sklon Pants",
+    "ShortName": ""
+  },
+  "66a259b6d30196f0c841920e": {
+    "Description": "Boss",
+    "Name": "Birdeye's Woodland Pants & Chemlight Pouch",
+    "ShortName": ""
+  },
+  "66a259b4418602c280a664a3": {
+    "Description": "Boss",
+    "Name": "Big Pipe's Combat Pants & Grenade Belt",
+    "ShortName": ""
+  },
+  "66a259b05b2be0551c7321f8": {
+    "Description": "Boss",
+    "Name": "Knight's Combat Pants & Ammo Pouch",
+    "ShortName": ""
+  },
+  "66a259b988750583c158b9eb": {
+    "Description": "Boss",
+    "Name": "Zryachiy's Ghillie Suit Pants",
+    "ShortName": ""
+  },
+  "66a259bc0080c7eb925dbc08": {
+    "Description": "Scav",
+    "Name": "SCAV \"Victory\" Jeans",
+    "ShortName": ""
+  },
+  "66a259c041749d56df37e847": {
+    "Description": "Boss",
+    "Name": "Kaban's XXXXL Sweatpants",
+    "ShortName": ""
+  },
+  "66a259c2edb03ce189f86fe6": {
+    "Description": "Scav",
+    "Name": "SCAV Faded Denim Jeans & Kneepad",
+    "ShortName": ""
+  },
+  "66a259c812532c98bdfdfbc1": {
+    "Description": "Scav",
+    "Name": "SCAV Dry Denim Jeans",
+    "ShortName": ""
+  },
+  "66a259cb6eafa833945267b2": {
+    "Description": "Scav",
+    "Name": "SCAV Blue Jeans with Mag Pouch",
+    "ShortName": ""
+  },
+  "66a259c5376d7b2f69eb0938": {
+    "Description": "Boss",
+    "Name": "Kollontay's Blue Tiger Camo Pants",
+    "ShortName": ""
+  },
+  "6764e42143b94f27ae0e0941": {
+    "Description": "Boss",
+    "Name": "Partisan's Olive Gorka Pants",
+    "ShortName": ""
+  },
+  "6353fe04f0de2294830a0dbe": {
+    "Description": "Big Pipe",
+    "Name": "Big Pipe",
+    "ShortName": "Big Pipe"
+  },
+  "6353fe34f0de2294830a0dbf": {
+    "Description": "Birdeye",
+    "Name": "Birdeye",
+    "ShortName": "Birdeye"
+  },
+  "6353fea0a644ca0c510d1dd8": {
+    "Description": "Killa",
+    "Name": "Killa",
+    "ShortName": "Killa"
+  },
+  "6353fe74a644ca0c510d1dd6": {
+    "Description": "Knight",
+    "Name": "Knight",
+    "ShortName": "Knight"
+  },
+  "6353fec227f75f803206e60a": {
+    "Description": "Tagilla",
+    "Name": "Tagilla",
+    "ShortName": "Tagilla"
+  },
+  "646e46ca286188c5480a1a37": {
+    "Description": "Blood",
+    "Name": "Blood",
+    "ShortName": "Blood"
+  },
+  "646e46d8f5438077af029fdb": {
+    "Description": "Hound",
+    "Name": "Hound",
+    "ShortName": "Hound"
+  },
+  "657c2ec38691e049d9662020": {
+    "Description": "Kollontay",
+    "Name": "Kollontay",
+    "ShortName": "Kollontay"
+  },
+  "657c2eac0f47e02d4b377308": {
+    "Description": "Kaban",
+    "Name": "Kaban",
+    "ShortName": "Kaban"
+  },
+  "657c2ed3cf82c352301b830e": {
+    "Description": "Shturman",
+    "Name": "Shturman",
+    "ShortName": "Shturman"
+  },
+  "6644d2da35d958070c02642c": {
+    "Description": "Mannequin Head",
+    "Name": "Mannequin Head",
+    "ShortName": "Mannequin Head"
+  },
+  "66a8ce418ea1637a3c1b2044": {
+    "Description": "Partisan",
+    "Name": "Partisan",
+    "ShortName": "Partisan"
+  },
+  "66aa5ca23d22c9416c010be0": {
+    "Description": "Partisan",
+    "Name": "Partisan",
+    "ShortName": "Partisan"
+  },
+  "67a22045cae994f25c087bb5": {
+    "Description": "Minotaur",
+    "Name": "Minotaur",
+    "ShortName":  "Minotaur"
+  }
+}

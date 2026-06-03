@@ -1,0 +1,3065 @@
+{
+	"UnlockScavClothing": true, // Allows you to purchase scav/boss clothes from Fence (or Ragman - see options below)
+	"UnlockScavVoices": true, // Allows you to select scav/boss voices
+	"UnlockScavHeads": true, // Allows you to select scav/boss heads
+
+	"UnlockPrestigeOptions": true,	// Unlocks the prestige voices and clothing by default. The clothing is not free by default (check 'prestigeClothes' section below).
+
+	"UnlockFactionalClothing": true, // Allows you to purchase the opposite faction's clothes from Ragman
+	"UnlockFactionalHeads": true, // Allows you to select the opposite faction's heads
+	"UnlockFactionalVoices": true, // Allows you to select the opposite faction's voices
+
+	"EnableMannequinHead": false,
+	"RemoveRefRequirement":  true,	// Changes the required Loyalty Levels from Ref to Ragman instead
+
+	"AllScavClothesFree": false, // All clothing added by this mod can be unlocked with no requirements
+	"AllPMCClothesFree": false, // All vanilla clothing sold by Ragman can be unlocked with no requirements
+
+	"UseRagmanInsteadOfFence": false, // All scav/boss clothing will be sold by Ragman instead of Fence
+
+	// Edit the "needTrade" section, if you'd like to customize prices and requirements.
+	"needTrade": { // These are all the kits that need to be added to a trader.
+		"wild_body": { // Localized name: SCAV Top (var. 1)
+			"availability": true, // Should it show in the shop? Set to false to disable this item entirely.
+			"suiteTradeID": "66a25a8c2aff19e8480cd3c4", // MongoID used internally for the trade entry, do NOT change.
+			"kitToSell": "66a25802209d339b12dab6aa", // MongoID of kit, also do not change.
+			"ragman": false, // Sold by ragman? If false, Fence is used.
+			"tradeRequirements": {
+				"loyaltyLevel": 1, // What level of loyalty is needed by the trader (Fence/Ragman) to unlock.
+				"profileLevel": 8, // What level your character must be to purchase.
+				"standing": 0, // What your standing must be in order to purchase (untested).
+				"prestigeLevel": 0, // What your prestige level must be to purchase.
+				"skillRequirements": [], // Skills that are required to purchase (Vitality, Stress Resistance, etc). Does not seem to function
+				"questRequirements": [ // Quest ID(s) that must be completed to purchase the clothing.
+					"596b455186f77457cb50eccb"
+				],
+				"itemRequirements": [ // Items required (usually Roubles)
+					{
+						"count": 80000, // Amount required
+						"_tpl": "5449016a4bdc2d6f028b456f" // ID of currency (in this case, roubles) - note that using USD or Euros will still only show the roubles symbol...
+					}
+				],
+				"achievementRequirements": [] // Achievements required to unlock the clothing (untested)
+			}
+		},
+		"wild_body_3": { // Localized name: SCAV Top (var. 2)
+			"availability": true,
+			"suiteTradeID": "66a25a9119e74185e9b90ae8",
+			"kitToSell": "66a2580d60dc871214f6c609",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 8,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"596b455186f77457cb50eccb"
+				],
+				"itemRequirements": [
+					{
+						"count": 80000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_1": { // Localized name: SCAV Jacket
+			"availability": true,
+			"suiteTradeID": "66a25a9519e5a2ace32652e8",
+			"kitToSell": "66a2581a8e674d5e474a0273",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 12,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 120000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_2": { // Localized name: SCAV Raincoat
+			"availability": true,
+			"suiteTradeID": "66a25a9b5f03c83c18a67a08",
+			"kitToSell": "66a25823bf3615f9a963992a",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 18,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 180000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Wild_Dealmaker_body": { // Localized name: Reshala's Leather Jacket
+			"availability": true,
+			"suiteTradeID": "66a25aa34c85b5649841d02d",
+			"kitToSell": "66a25833df0de64791228fe9",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 20,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e2c386f77443e7549029"
+				],
+				"itemRequirements": [
+					{
+						"count": 1500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_body_1": { // Localized name: GUARD Police Jacket
+			"availability": true,
+			"suiteTradeID": "66a25aa8a62b649a0caaa0e2",
+			"kitToSell": "66a2583d4e0569aaa7014018",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"596b455186f77457cb50eccb"
+				],
+				"itemRequirements": [
+					{
+						"count": 149197,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_body_2": { // Localized name: GUARD Security Sweater
+			"availability": true,
+			"suiteTradeID": "66a25acd0d14582ce1324e7c",
+			"kitToSell": "66a25847bf2113d103de3045",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"596b455186f77457cb50eccb"
+				],
+				"itemRequirements": [
+					{
+						"count": 149197,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_pmcBot_body": { // Localized name: RAIDER Jacket
+			"availability": true,
+			"suiteTradeID": "66a25ad2dcbbc0441818005d",
+			"kitToSell": "66a25855b8ac917bfc1cfd52",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 32,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e45e86f77408251c4bfa"
+				],
+				"itemRequirements": [
+					{
+						"count": 750000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_Shturman_body_nohead": { // Localized name: Shturman's Parka
+			"availability": true,
+			"suiteTradeID": "66a25ad9749915a5fbda9600",
+			"kitToSell": "66a25865a63c1499f7c11ceb",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e2ee86f77443e35162ea"
+				],
+				"itemRequirements": [
+					{
+						"count": 2500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_Shturman_body_nohead_alt": { // Localized name: Shturman's Parka (Hood Down)
+			"availability": true,
+			"suiteTradeID": "66a25addd40c7f8f9c9c1e24",
+			"kitToSell": "66a2586fff1bb6e3031a1eea",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e2ee86f77443e35162ea"
+				],
+				"itemRequirements": [
+					{
+						"count": 2500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_Gluhar_body": { // Localized name: Glukhar's T-Shirt With PACA Top
+			"availability": true,
+			"suiteTradeID": "66a25ae15924385813aacf8b",
+			"kitToSell": "66a2587c9c2b37866d4a934f",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e44f86f77443e625e385"
+				],
+				"itemRequirements": [
+					{
+						"count": 2729270,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Tshirt_security_TshirtTatu_01": { // Localized name: GUARD Black T-Shirt
+			"availability": true,
+			"suiteTradeID": "66a25ae85427b06af99cf0c7",
+			"kitToSell": "66a25885fe2cf952aa1fe3b5",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 5,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 50000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Tshirt_security_TshirtTatu_02": { // Localized name: GUARD Black T-Shit (With Tatoos)
+			"availability": true,
+			"suiteTradeID": "66a25b06f568fccc00ce36ca",
+			"kitToSell": "66a2588f5c3d6f142b3a0e91",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 5,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 50000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_security_Husky": { // Localized name: GUARD Husky Hardshell Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b0a69eefa50216b158b",
+			"kitToSell": "66a25897df999bf137f59a7b",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 23,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 230000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_security_Gorka4": { // Localized name: GUARD Gorka 4 Top
+			"availability": true,
+			"suiteTradeID": "66a25b0eb830344200aa5f47",
+			"kitToSell": "66a258a02d7e21a0f4a65671",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 250000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"scav_kit_upper_meteor": { // Localized name: SCAV Meteor Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b12e9d82923111b4b56",
+			"kitToSell": "66a258a9d499bd2e3ae151ca",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 280000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_russia1": { // Localized name: SCAV Russia Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b17b950964ab3d3c2d8",
+			"kitToSell": "66a258b00dbcfbc5da693c7b",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 34,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 2500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Sanitar": { // Localized name: Sanitar's Medical Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b1eb4ecab86ccec3a33",
+			"kitToSell": "66a258b857b4dbe5bb3f6a35",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5edac63b930f5454f51e128b"
+				],
+				"itemRequirements": [
+					{
+						"count": 2800000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_motocross": { // Localized name: SCAV Motocross Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b23ef44e1da6685144c",
+			"kitToSell": "66a258c29f5820847f97dda3",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 14,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5ae4490786f7744ca822adcc"
+				],
+				"itemRequirements": [
+					{
+						"count": 99465,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"top_cultist_01": { // Localized name: Cultist Priest Top
+			"availability": false, // Deprecated by the official BSG one.
+			"suiteTradeID": "66a25b27eaea817d200450ac",
+			"kitToSell": "66a258ca131ef292c721e9fa",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 50,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"60e71c11d54b755a3b53eb65"
+				],
+				"itemRequirements": [
+					{
+						"count": 666,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"top_cultist_02": { // Localized name: Cultist Warrior Top
+			"availability": true,
+			"suiteTradeID": "66a25b2ca8dd5d5dd469aacf",
+			"kitToSell": "66a258d44027130800bb9978",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5a27ba1c86f77461ea5a3c56"
+				],
+				"itemRequirements": [
+					{
+						"count": 6666666,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_rainparka": { // Localized name: SCAV Rain Parka
+			"availability": true,
+			"suiteTradeID": "66a25b32efbf369e36d19562",
+			"kitToSell": "66a258d9b62c6a1374bdb20a",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 7,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"59674cd986f7744ab26e32f2"
+				],
+				"itemRequirements": [
+					{
+						"count": 70000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_underarmour": { // Localized name: SCAV Under Armour Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b37d8fc92b492784278",
+			"kitToSell": "66a258debfe22e94946ad169",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 26,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5ae4495086f77443c122bc40"
+				],
+				"itemRequirements": [
+					{
+						"count": 260000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"top_boss_tagilla_nohead": { // Localized name: Tagilla's Chest
+			"availability": true,
+			"suiteTradeID": "66a25b3be27be8a384e1dd8a",
+			"kitToSell": "66a258e3c6b9ee37e81abcd2",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"60c0c018f7afb4354815096a"
+				],
+				"itemRequirements": [
+					{
+						"count": 3500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_bomber": { // Localized name: SCAV Bomber Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b40ae88c61eee42de90",
+			"kitToSell": "66a258fb87757fff782ac456",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 29,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5ae4497b86f7744cf402ed00"
+				],
+				"itemRequirements": [
+					{
+						"count": 290000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_top_yellowcoat": { // Localized name: SCAV Yellow Coat
+			"availability": true,
+			"suiteTradeID": "66a25b44a850f8297cc6c5c5",
+			"kitToSell": "66a258ffd44d4c4b708cf7fc",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 21,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 210000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Blackknight": { // Localized name: Knight's Quarter-Zip Shirt & Patches
+			"availability": true,
+			"suiteTradeID": "66a25b4913f7256f512b9862",
+			"kitToSell": "66a259095102e737db621905",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 45,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"626bdcc3a371ee3a7a3514c5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_BigPipe": { // Localized name: Big Pipe's Quarter-Zip Shirt
+			"availability": true,
+			"suiteTradeID": "66a25b4f3adb31c0569d5556",
+			"kitToSell": "66a2591e3761c0c6ee3e120e",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 45,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"626bdcc3a371ee3a7a3514c5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Birdeye": { // Localized name: Birdeye's Sweater & Shemagh
+			"availability": true,
+			"suiteTradeID": "66a25b531aa5eeb2a81b7d55",
+			"kitToSell": "66a2592a6b1df847bc3524ac",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 45,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"626bdcc3a371ee3a7a3514c5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Zryachi": { // Localized name: Zryachiy's Ghillie Suit Top
+			"availability": true,
+			"suiteTradeID": "68ee7b15920831b641080d7d",
+			"kitToSell": "66a2593329bb1f6f5165bc55",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 46,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"625d700cc48e6c62a440fab5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Zryachi_hooddown": { // Localized name: Zryachiy's Ghillie Suit Top (Hood Down)
+			"availability": true,
+			"suiteTradeID": "66a25b572b636a8a8cd2945f",
+			"kitToSell": "68ee81c0920831b641080d7f",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 46,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"625d700cc48e6c62a440fab5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_victory": { // Localized name: SCAV "Victory" Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b5bc057cc0155c17f84",
+			"kitToSell": "66a25936fa20fd14b0d4b0ad",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"63a9ae24009ffc6a551631a5"
+				],
+				"itemRequirements": [
+					{
+						"count": 2500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Kaban": { // Localized name: Kaban's Pullover & Long Coat
+			"availability": true,
+			"suiteTradeID": "66a25b5f5f9112ed67a2b0b8",
+			"kitToSell": "66a2593faae89d275adbb738",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"64e7b971f9d6fa49d6769b44"
+				],
+				"itemRequirements": [
+					{
+						"count": 7500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_body_feldparka": { // Localized name: Bundeswehr Feldparka
+			"availability": true,
+			"suiteTradeID": "66a25b6418e9df242af2ccc2",
+			"kitToSell": "66a2594ae55dd274d4020892",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"639135e8c115f907b14700aa"
+				],
+				"itemRequirements": [
+					{
+						"count": 1000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Kolontai": { // Localized name: Kollontay's Armored Blue Tiger Top
+			"availability": true,
+			"suiteTradeID": "66a25b68c2bf031259eef706",
+			"kitToSell": "66a25954c8242edbdc70879f",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6578eb36e5020875d64645cd"
+				],
+				"itemRequirements": [
+					{
+						"count": 8000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_body_bratva_1": { // Localized name: SCAV Leather Mobster Jacket
+			"availability": true,
+			"suiteTradeID": "66a25b6c37f47f3aba9225b3",
+			"kitToSell": "66a2595e5f3b014c96666890",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6572e876dc0d635f633a5714"
+				],
+				"itemRequirements": [
+					{
+						"count": 4000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_body_bratva_2": { // Localized name: SCAV Leather Mobster Jacket (Zipped)
+			"availability": true,
+			"suiteTradeID": "66a25b70338f4ea207a40f3a",
+			"kitToSell": "66a25966f78c597fec6c639b",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6572e876dc0d635f633a5714"
+				],
+				"itemRequirements": [
+					{
+						"count": 4000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_kit_kultist": { // Localized name: Cultist jacket
+			"availability": true,
+			"suiteTradeID": "66a25b8c829925184e6fa1a8",
+			"kitToSell": "666841a02537107dc508b704",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 50,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"60e71c11d54b755a3b53eb65"
+				],
+				"itemRequirements": [
+					{
+						"count": 666,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Top_BOSS_Partizan": { // Localized name: Partisan's Winter Jacket
+			"availability": true,
+			"suiteTradeID": "6764d1bdb4fe55dc52cf30c6",
+			"kitToSell": "6764d55226c607ad42f6d6c0",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 4000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": [
+					"65141b9859647d2cb3213ca2",
+					"65141bdfcf2f1c285e606446"
+				]
+			}
+		},
+		"pmc_battlepass_1_black": { // Localized name: Mutkevich t-shirt (Black)
+			"availability": true,
+			"suiteTradeID": "68f8dd9affb05722dc82d785",
+			"kitToSell": "67ac878ca6749cd1690ae1df",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 51,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 40,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_battlepass_1_white": { // Localized name: Mutkevich t-shirt (White)
+			"availability": true,
+			"suiteTradeID": "68f8deec47468bb4745ae0f9",
+			"kitToSell": "67ac880e5d717b44c00a0c98",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 40,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_battlepass_2": { // Localized name: SBEU Mosquito t-shirt
+			"availability": true,
+			"suiteTradeID": "68f8df6d04bbd2921164f6f0",
+			"kitToSell": "67ac886da6749cd1690ae1e1",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 3,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 40,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_battlepass_3": { // Localized name: SBEU Mosquito t-shirt (Alt)
+			"availability": true,
+			"suiteTradeID": "68f8df948dd43909d4c35387",
+			"kitToSell": "67ac88b55d717b44c00a0c9a",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 40,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_battlepass_4": { // Localized name: Fucker & Motherfucker t-shirt
+			"availability": true,
+			"suiteTradeID": "68f8dfcd96ee8fb28006cb9d",
+			"kitToSell": "67ac88ef2d470eee7a03a726",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 58,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 50,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_battlepass_5": { // Localized name: Saiga t-shirt
+			"availability": true,
+			"suiteTradeID": "68f8dff7516d252625457ebf",
+			"kitToSell": "67ac8911f46484d877033ed6",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 47,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 40,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pmc_battlepass_6": { // Localized name: Knives Only t-shirt
+			"availability": true,
+			"suiteTradeID": "68f8e03a2a07f40be8e753af",
+			"kitToSell": "67ac8937a6749cd1690ae1e3",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 0,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [],
+				"achievementRequirements": [
+					"65141a3059647d2cb3213c9e"
+				]
+			}
+		},
+		"pmc_arena_acs4": { // Localized name: Grenadier t-shirt
+			"availability": true,
+			"suiteTradeID": "68ffce78b2d74645391d4b6a",
+			"kitToSell": "685ebb9dd8500c455802e9c8",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 0,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [],
+				"achievementRequirements": [
+					"651419eea3dd9b6aa7159ee5"
+				]
+			}
+		},
+		"bear_kit_upper_hawaii_03": { // Localized name: BEAR Vacation upper
+			"availability": true,
+			"suiteTradeID": "68ffd42f774828d14423ffea",
+			"kitToSell": "685d097e97aa09c6b60df9f5",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 4,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 3,
+						"_tpl": "6656560053eaaa7a23349c86"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet": { // Localized name: SCAV Jeans
+			"availability": true,
+			"suiteTradeID": "66a25bbad78c43e36767c325",
+			"kitToSell": "66a2596ecd2a6fa35961de0a",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 8,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 80000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_1": { // Localized name: SCAV Military Pants
+			"availability": true,
+			"suiteTradeID": "66a25bbeb951260999ced6e7",
+			"kitToSell": "66a2596c0db81d88c4f7c68c",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 12,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 120000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_2": { // Localized name: SCAV Gorka Pants
+			"availability": true,
+			"suiteTradeID": "66a25bc16058a793a57f899d",
+			"kitToSell": "66a2597271700369d21ee70d",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 18,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 180000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Wild_Dealmaker_feet": { // Localized name: Reshala's Kryptek Pants
+			"availability": true,
+			"suiteTradeID": "66a25bc728d27504caaa7bd5",
+			"kitToSell": "66a259758a0d001755ee5986",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 20,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e2c386f77443e7549029"
+				],
+				"itemRequirements": [
+					{
+						"count": 1500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_feet_1": { // Localized name: GUARD MVD Pants (Gray-Blue Kamysh)
+			"availability": true,
+			"suiteTradeID": "66a25bcd6f80688d946a3b5f",
+			"kitToSell": "66a25978a06a7358be88d72e",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"596b455186f77457cb50eccb"
+				],
+				"itemRequirements": [
+					{
+						"count": 149197,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_pmcBot_feet": { // Localized name: RAIDER Pants
+			"availability": true,
+			"suiteTradeID": "66a25bd142204b86f5a9e991",
+			"kitToSell": "66a2597be8f7c15e44443955",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 32,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e45e86f77408251c4bfa"
+				],
+				"itemRequirements": [
+					{
+						"count": 750000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Glukhar": { // Localized name: Glukhar's Black Jeans
+			"availability": true,
+			"suiteTradeID": "66a25bd5edca61029e276452",
+			"kitToSell": "66a2597f7125561227c5b383",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e44f86f77443e625e385"
+				],
+				"itemRequirements": [
+					{
+						"count": 2729270,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Shturman": { // Localized name: Shturman's DPM Pants
+			"availability": true,
+			"suiteTradeID": "66a25bd9e50e56b1aa29d530",
+			"kitToSell": "66a25981d8ce351fdaf4ee13",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e2ee86f77443e35162ea"
+				],
+				"itemRequirements": [
+					{
+						"count": 2500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_security_Gorka4": { // Localized name: GUARD Gorka 4 Pants
+			"availability": true,
+			"suiteTradeID": "66a25bdd4d48bd7d8ed4bfa0",
+			"kitToSell": "66a25985cfaa5daddf043475",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5979f9ba86f7740f6c3fe9f2"
+				],
+				"itemRequirements": [
+					{
+						"count": 136463,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_security_Flora": { // Localized name: GUARD Flora Pants
+			"availability": true,
+			"suiteTradeID": "66a25be17ce51f8de5866ee9",
+			"kitToSell": "66a2598856e58dae9c33bf82",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5979f9ba86f7740f6c3fe9f2"
+				],
+				"itemRequirements": [
+					{
+						"count": 136463,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"scav_kit_lower_sklon": { // Localized name: SCAV Sklon Pants
+			"availability": true,
+			"suiteTradeID": "66a25be6a49e997357864ec6",
+			"kitToSell": "66a2598bce7b791278ac6b05",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 26,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5ae4495086f77443c122bc40"
+				],
+				"itemRequirements": [
+					{
+						"count": 260000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Sanitar": { // Localized name: Sanitar's Rain Boots
+			"availability": true,
+			"suiteTradeID": "66a25bea75d517353f580365",
+			"kitToSell": "66a2598ea4dc2d30842dcead",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5edac63b930f5454f51e128b"
+				],
+				"itemRequirements": [
+					{
+						"count": 2800000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_sweatpants": { // Localized name: SCAV Rain Boots
+			"availability": true,
+			"suiteTradeID": "66a25bf0b9c8214bc8eca5c8",
+			"kitToSell": "66a25991764ca0c5abcd81d3",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 7,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 70000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_wasatch": { // Localized name: SCAV Browning Wasatch Pants
+			"availability": true,
+			"suiteTradeID": "66a25bf346055d290d0883ef",
+			"kitToSell": "66a259955dc2644097ac360b",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 5,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 50000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_slimPants": { // Localized name: SCAV Drystch Pants
+			"availability": true,
+			"suiteTradeID": "66a25bf83a34a8de3e613b3c",
+			"kitToSell": "66a25998d89be9345cde182b",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 14,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5ae4490786f7744ca822adcc"
+				],
+				"itemRequirements": [
+					{
+						"count": 99465,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pants_cultist_01": { // Localized name: Cultist Pants 1
+			"availability": true,
+			"suiteTradeID": "66a25bfc9c939f1835dc88fb",
+			"kitToSell": "66a2599a1de9ee22aba0cdb8",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 50,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"60e71c11d54b755a3b53eb65"
+				],
+				"itemRequirements": [
+					{
+						"count": 666,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pants_cultist_02": { // Localized name: Cultist Pants 2
+			"availability": true,
+			"suiteTradeID": "66a25c009bd244ea8948dc63",
+			"kitToSell": "66a2599e50651d1eeadc3440",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5a27ba1c86f77461ea5a3c56"
+				],
+				"itemRequirements": [
+					{
+						"count": 6666666,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_scavelite_taclite": { // Localized name: RAIDER Taclite Pro Ripstop Pants
+			"availability": true,
+			"suiteTradeID": "66a25c04684e659fbef623a0",
+			"kitToSell": "66a259a1fa8d47b051f9953f",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 32,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5d25e45e86f77408251c4bfa"
+				],
+				"itemRequirements": [
+					{
+						"count": 750000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"pants_boss_tagilla": { // Localized name: Tagilla's Crye G3 Combat Pants (Multicam Black)
+			"availability": true,
+			"suiteTradeID": "66a25c09e109feda8a6a656f",
+			"kitToSell": "66a259a5ec21b527cd28ca9b",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"60c0c018f7afb4354815096a"
+				],
+				"itemRequirements": [
+					{
+						"count": 3500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_bomber": { // Localized name: SCAV "Bro" Running Pants
+			"availability": true,
+			"suiteTradeID": "66a25c0da40191822e1b6f77",
+			"kitToSell": "66a259a85409b62fcc979f96",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 29,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5ae4497b86f7744cf402ed00"
+				],
+				"itemRequirements": [
+					{
+						"count": 325000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_pants_yellowcoat": { // Localized name: SCAV Izlom Pants
+			"availability": true,
+			"suiteTradeID": "66a25c11c33c290bdb9562a3",
+			"kitToSell": "66a259ab87e544e8902409f6",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 21,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 275000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Wild_Killa_feet": { // Localized name: Adik Tracksuit Pants
+			"availability": true,
+			"suiteTradeID": "66a25c15374d3111906a7cf3",
+			"kitToSell": "66a259aee7ed0609ca9fefa9",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 3,
+				"profileLevel": 48,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"5dc53acb86f77469c740c893"
+				],
+				"itemRequirements": [
+					{
+						"count": 4000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Blackknight": { // Localized name: Knight's Combat Pants & Ammo Pouch
+			"availability": true,
+			"suiteTradeID": "66a25c1a4990abd027462a10",
+			"kitToSell": "66a259b05b2be0551c7321f8",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 45,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"626bdcc3a371ee3a7a3514c5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_BigPipe": { // Localized name: Big Pipe's Combat Pants & Grenade Belt
+			"availability": true,
+			"suiteTradeID": "66a25c1f6fe6ecf760863b5c",
+			"kitToSell": "66a259b4418602c280a664a3",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 45,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"626bdcc3a371ee3a7a3514c5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Birdeye": { // Localized name: Birdeye's Woodland Pants & Chemlight Pouch
+			"availability": true,
+			"suiteTradeID": "66a25c22c1039ead5e741cfe",
+			"kitToSell": "66a259b6d30196f0c841920e",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 45,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"626bdcc3a371ee3a7a3514c5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Zryachi": { // Localized name: Zryachiy's Ghillie Suit Pants
+			"availability": true,
+			"suiteTradeID": "66a25c2741d9945519486783",
+			"kitToSell": "66a259b988750583c158b9eb",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 46,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"625d700cc48e6c62a440fab5"
+				],
+				"itemRequirements": [
+					{
+						"count": 5000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_victory": { // Localized name: SCAV "Victory" Jeans
+			"availability": true,
+			"suiteTradeID": "66a25c2ce369a24b03e1bf55",
+			"kitToSell": "66a259bc0080c7eb925dbc08",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"63a9ae24009ffc6a551631a5"
+				],
+				"itemRequirements": [
+					{
+						"count": 2500000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Kaban": { // Localized name: Kaban's XXXXL Sweatpants
+			"availability": true,
+			"suiteTradeID": "66a25c303b891134fedf6619",
+			"kitToSell": "66a259c041749d56df37e847",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"64e7b971f9d6fa49d6769b44"
+				],
+				"itemRequirements": [
+					{
+						"count": 3000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_feet_feldparka": { // Localized name: SCAV Faded Denim Jeans & Kneepad
+			"availability": true,
+			"suiteTradeID": "66a25c3439842cbc630e2217",
+			"kitToSell": "66a259c2edb03ce189f86fe6",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"639135e8c115f907b14700aa"
+				],
+				"itemRequirements": [
+					{
+						"count": 800000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Kolontai": { // Localized name: Kollontay's Padded Camo Pants
+			"availability": true,
+			"suiteTradeID": "66a25c38f402e9e9a2290b5f",
+			"kitToSell": "66a259c5376d7b2f69eb0938",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6578eb36e5020875d64645cd"
+				],
+				"itemRequirements": [
+					{
+						"count": 8000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_feet_bratva_1": { // Localized name: SCAV Dry Denim Jeans
+			"availability": true,
+			"suiteTradeID": "66a25c3c80f02d5d534b0050",
+			"kitToSell": "66a259c812532c98bdfdfbc1",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6572e876dc0d635f633a5714"
+				],
+				"itemRequirements": [
+					{
+						"count": 3000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"wild_security_feet_bratva_2": { // Localized name: SCAV Blue Jeans with Mag Pouch
+			"availability": true,
+			"suiteTradeID": "66a25c41a8ab7fd2f15d34ad",
+			"kitToSell": "66a259cb6eafa833945267b2",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 28,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6572e876dc0d635f633a5714"
+				],
+				"itemRequirements": [
+					{
+						"count": 3000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"Pants_BOSS_Partizan": { // Localized name: Partisan's Olive Gorka Pants
+			"availability": true,
+			"suiteTradeID": "6764d857f9f6a572760a724b",
+			"kitToSell": "6764e42143b94f27ae0e0941",
+			"ragman": false,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 30,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 4000000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements": [
+					"65141b9859647d2cb3213ca2",
+					"65141bdfcf2f1c285e606446"
+				]
+			}
+		},
+		"bear_kit_lower_Phoenix_arena_bp_03": { // Localized name: BEAR Paladin (Tactical Olive)
+			"availability": true,
+			"suiteTradeID": "68fe86343cc1a5baac0796e4",
+			"kitToSell": "67b32b7c038008b0e105de2e",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 60,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"bear_kit_lower_Phoenix_arena_bp_02": { // Localized name: 	BEAR Paladin (Ranger Green)
+			"availability": true,
+			"suiteTradeID": "68feacc8e9fb55e98c5710f1",
+			"kitToSell": "67b32b69c57909356d0b0fee",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 70,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"bear_kit_lower_Phoenix_arena_bp_01": { // Localized name: 	BEAR Paladin (Ranger Green)
+			"availability": true,
+			"suiteTradeID": "68fead1ed377bfac03662fb9",
+			"kitToSell": "67b32b53038008b0e105de2c",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 63,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 75,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"usec_kit_lower_cereum_arena_bp_01": { // Localized name: 	USEC K4 (Dark Olive)
+			"availability": true,
+			"suiteTradeID": "68fead9e65c83b25ddd956e9",
+			"kitToSell": "67b32bcfc57909356d0b0ff0",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 15,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 60,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"usec_kit_lower_cereum_arena_bp_02": { // Localized name: 	USEC K4 (Green)
+			"availability": true,
+			"suiteTradeID": "68feadb5f5ca27c1f5d47f53",
+			"kitToSell": "67b32bdfab1a22b646087266",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 70,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"usec_kit_lower_cereum_arena_bp_03": { // Localized name: 	USEC K4 (Timber Brown)
+			"availability": true,
+			"suiteTradeID": "68feadff9825d602c5340f8d",
+			"kitToSell": "67b32bf0d813e783fc0ddac1",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 63,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 75,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements": []
+			}
+		},
+		"bear_kit_lower_shorts": { // Localized name: BEAR Vacation lower
+			"availability": true,
+			"suiteTradeID": "68ffd4c9933f17b4e6bc5bb4",
+			"kitToSell": "685d0967cb2cba9e8f02e7b3",
+			"ragman": true,
+			"tradeRequirements": {
+				"loyaltyLevel": 4,
+				"profileLevel": 40,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 3,
+						"_tpl": "6656560053eaaa7a23349c86"
+					}
+				],
+				"achievementRequirements": []
+			}
+		}
+	},
+	"replaceTrade": {
+		"6767636f4667ff22db0985d6": { // Snowman t-shirt (has Arena event-only quest requirement).
+			"_id": "6767636f4667ff22db0985d6",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "67603ea391ec8cab9406faa4",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 20,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [
+					"6752f6d83038f7df520c83e8"
+				],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 500000,
+						"_tpl": "5449016a4bdc2d6f028b456f",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"6762d8cd605be95f5b0ac503": { // BEAR Winter upper (has seasonal quest/event requirement)
+			"_id": "6762d8cd605be95f5b0ac503",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675998aba378f89a3e089b5c",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 10,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 2,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"6762d8ae5ad704bbac091076": { // USEC Winter upper (has seasonal quest/event requirement)
+			"_id": "6762d8ae5ad704bbac091076",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675fd6dc7a57e0b2a00e340a",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 10,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 2,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"6762d84efcb52aae730c7ab5": { // BEAR Winter lower (has seasonal quest/event requirement)
+			"_id": "6762d84efcb52aae730c7ab5",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "67599889a378f89a3e089b5a",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 10,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 1,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"6762d8706aea4e46b107b71e": { // USEC Winter lower (has seasonal quest/event requirement)
+			"_id": "6762d8706aea4e46b107b71e",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675fd71c1c153e52f1050fd6",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 10,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 1,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edff217ad2d0758043e02": { // USEC Deadly Frog upper (DLC)
+			"_id": "675edff217ad2d0758043e02",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "6750713a65b30e16220465d6",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 2,
+				"profileLevel": 20,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 1,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edfd017ad2d0758043e01": { // USEC Deadly Frog lower (DLC)
+			"_id": "675edfd017ad2d0758043e01",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675070a550f7ea9dc604afc7",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 2,
+				"profileLevel": 20,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 1,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edf7747071f542303381b": { // BEAR Nord upper (DLC)
+			"_id": "675edf7747071f542303381b",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "67506a0bf31909748c0dcdb6",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 2,
+				"profileLevel": 20,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 1,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edf8f9c0d3a0f920f76ac": { // BEAR Nord lower (DLC)
+			"_id": "675edf8f9c0d3a0f920f76ac",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "67506fe494cadd62770abbe6",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 2,
+				"profileLevel": 20,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 1,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edf529c0d3a0f920f76ab": { // USEC Special Ops upper (DLC)
+			"_id": "675edf529c0d3a0f920f76ab",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675698eafb0f45813a055a36",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 3,
+				"profileLevel": 30,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 2,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edf2f47071f5423033819": { // USEC Special Ops lower (DLC)
+			"_id": "675edf2f47071f5423033819",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "6756997970afee6336051976",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 3,
+				"profileLevel": 30,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 2,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edfb447071f542303381d": { // BEAR Instructor upper (DLC)
+			"_id": "675edfb447071f542303381d",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675696bb7a69ab97c30a09f6",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 3,
+				"profileLevel": 30,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 2,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"675edfc1551f7e93af0e537b": { // BEAR Instructor lower (DLC)
+			"_id": "675edfc1551f7e93af0e537b",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "675697337a69ab97c30a09f8",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 3,
+				"profileLevel": 30,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 2,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"685d3a11a019282f080e6a14": { // USEC Day Off upper (DLC)
+			"_id": "685d3a11a019282f080e6a14",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "685d09b4029bc4c1190e819d",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 4,
+				"profileLevel": 40,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 3,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		},
+		"685d3a3f4f14ff61980f991f": { // USEC Day Off lower (DLC)
+			"_id": "685d3a3f4f14ff61980f991f",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "685d092aed4e253164064e05",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 4,
+				"profileLevel": 40,
+				"standing": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"id": null,
+						"count": 3,
+						"_tpl": "6656560053eaaa7a23349c86",
+						"onlyFunctional": false,
+						"type": "ItemRequirement"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		}
+	},
+	"prestigeClothes": {
+		"greenHawaiianShirt": {
+			"_id": "68f8e1d7d560f7be4a768f95",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "6847e76f3f4cd20a97097a93",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 100,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+			},
+		"blueHawaiianShirt": {
+			"_id": "68f8e33d39b67f21b5ae5e3b",
+			"tid": "5ac3b934156ae10c4430e83c",
+			"suiteId": "6847e663f43abfdda205835a",
+			"isActive": true,
+			"isHiddenInPVE": false,
+			"externalObtain": false,
+			"internalObtain": true,
+			"requirements": {
+				"loyaltyLevel": 1,
+				"profileLevel": 25,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements": [],
+				"questRequirements": [],
+				"achievementRequirements": [],
+				"itemRequirements": [
+					{
+						"count": 100,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"requiredTid": "5ac3b934156ae10c4430e83c"
+			}
+		}
+	},
+	"needKit": { // These are all the uppers and lowers that need a kit generated.
+		"tops": {
+			"wild_body": { // Localized name: SCAV Top (var. 1)
+				"hands": "5cc2e68f14c02e28b47de290", // ID of hands to use in first person for this top
+				"body": "5cc2e59214c02e000f16684e", // ID of the top entry to use
+				"id": "66a25802209d339b12dab6aa" // MongoID for the kit entry
+			},
+			"wild_body_3": { // Localized name: SCAV Top (var. 2)
+				"hands": "66a257d786e1ec519f8ad1b1",
+				"body": "5d28ad7286f7742926686182",
+				"id": "66a2580d60dc871214f6c609"
+			},
+			"wild_body_1": { // Localized name: SCAV Jacket
+				"hands": "5cc2e68f14c02e28b47de290",
+				"body": "5cde9f337d6c8b0474535da8",
+				"id": "66a2581a8e674d5e474a0273"
+			},
+			"wild_body_2": { // Localized name: SCAV Raincoat
+				"hands": "66a257d56c9eec11b2527f63",
+				"body": "5d28ad6986f77429275dba22",
+				"id": "66a25823bf3615f9a963992a"
+			},
+			"Wild_Dealmaker_body": { // Localized name: Reshala's Leather Jacket
+				"hands": "66a257998e8900f1b7744e82",
+				"body": "5d28adcb86f77429242fc893",
+				"id": "66a25833df0de64791228fe9"
+			},
+			"wild_security_body_1": { // Localized name: GUARD Police Jacket
+				"hands": "66a257c524aaa24a3ffc7a40",
+				"body": "5d28adfd86f774292364a6e5",
+				"id": "66a2583d4e0569aaa7014018"
+			},
+			"wild_security_body_2": { // Localized name: GUARD Security Sweater
+				"hands": "66a257c8ed748bf793da3e78",
+				"body": "5d28ae2986f7742926686185",
+				"id": "66a25847bf2113d103de3045"
+			},
+			"wild_pmcBot_body": { // Localized name: RAIDER Jacket
+				"hands": "66a257c2c97c86f98c2d91ce",
+				"body": "5d28ae4986f7742926686187",
+				"id": "66a25855b8ac917bfc1cfd52"
+			},
+			"wild_Shturman_body_nohead": { // Localized name: Shturman's Parka
+				"hands": "66a257a0b33deea01b59570b",
+				"body": "66a25a1718eca9b1104be619",
+				"id": "66a25865a63c1499f7c11ceb"
+			},
+			"wild_Shturman_body_nohead_alt": { // Localized name: Shturman's Parka (Hood Down)
+				"hands": "66a257a0b33deea01b59570b",
+				"body": "66a25a33bbfb47717a057581",
+				"id": "66a2586fff1bb6e3031a1eea"
+			},
+			"wild_Gluhar_body": { // Localized name: Glukhar's T-Shirt With PACA Top
+				"hands": "66a2578c98a33aac05c8d5da",
+				"body": "5d5e7dd786f7744a7a274322",
+				"id": "66a2587c9c2b37866d4a934f"
+			},
+			"Tshirt_security_TshirtTatu_01": { // Localized name: GUARD Black T-Shirt
+				"hands": "66a257cbeffb1bfc57d168be",
+				"body": "5d5e7e4a86f774279a21cc0d",
+				"id": "66a25885fe2cf952aa1fe3b5"
+			},
+			"Tshirt_security_TshirtTatu_02": { // Localized name: GUARD Black T-Shit (With Tatoos)
+				"hands": "66a257ce2f6fdb390b0de6a6",
+				"body": "5d5e7e5d86f774279b4f4b01",
+				"id": "66a2588f5c3d6f142b3a0e91"
+			},
+			"Top_security_Husky": { // Localized name: GUARD Husky Hardshell Jacket
+				"hands": "66a257bfa270e6b4d2d2b250",
+				"body": "5d5e7e7586f77427997cfb7f",
+				"id": "66a25897df999bf137f59a7b"
+			},
+			"Top_security_Gorka4": { // Localized name: GUARD Gorka 4 Top
+				"hands": "66a257bca1973c6788cb0cfc",
+				"body": "5d5e7e8386f774393602d6fa",
+				"id": "66a258a02d7e21a0f4a65671"
+			},
+			"scav_kit_upper_meteor": { // Localized name: SCAV Meteor Jacket
+				"hands": "5df8eac086f77412640e2ea7",
+				"body": "5df8a10486f77412672a1e3a",
+				"id": "66a258a9d499bd2e3ae151ca"
+			},
+			"wild_body_russia1": { // Localized name: SCAV Russia Jacket
+				"hands": "5e4bb49586f77406a313ec5a",
+				"body": "5e4bb3ee86f77406975c934e",
+				"id": "66a258b00dbcfbc5da693c7b"
+			},
+			"Top_BOSS_Sanitar": { // Localized name: Sanitar's Medical Jacket
+				"hands": "66a2579dd7c05ac27b7b090b",
+				"body": "5e9975c486f774382b6320cb",
+				"id": "66a258b857b4dbe5bb3f6a35"
+			},
+			"wild_body_motocross": { // Localized name: SCAV Motocross Jacket
+				"hands": "5e9da2dd86f774054e7d0f63",
+				"body": "5e9da1d086f774054a667134",
+				"id": "66a258c29f5820847f97dda3"
+			},
+			"top_cultist_01": { // Localized name: Cultist Priest Top
+				"hands": "66a257b0557e1310189c6ea9",
+				"body": "5fb53cc97b5d1342ee24bd63",
+				"id": "66a258ca131ef292c721e9fa"
+			},
+			"top_cultist_02": { // Localized name: Cultist Warrior Top
+				"hands": "66a257b8878cb262bdc7783f",
+				"body": "5fb53d0b7b5d1342ee24bd64",
+				"id": "66a258d44027130800bb9978"
+			},
+			"wild_body_rainparka": { // Localized name: SCAV Rain Parka
+				"hands": "5fd78fe9e3bfcf6cab4c9f54",
+				"body": "5fd1eb3fbe3b7107d66cb645",
+				"id": "66a258d9b62c6a1374bdb20a"
+			},
+			"wild_body_underarmour": { // Localized name: SCAV Under Armour Jacket
+				"hands": "5fd7901bdd870108a754c0e6",
+				"body": "5fd22d311add82653b5a704c",
+				"id": "66a258debfe22e94946ad169"
+			},
+			"top_boss_tagilla_nohead": { // Localized name: Tagilla's Chest
+				"hands": "66a257a4a5b72803728b43c9",
+				"body": "66a25a3af12f29d8a2599527",
+				"id": "66a258e3c6b9ee37e81abcd2"
+			},
+			"wild_body_bomber": { // Localized name: SCAV Bomber Jacket
+				"hands": "618cf9540a5a59657e5f5677",
+				"body": "619238266c614e6d15792bca",
+				"id": "66a258fb87757fff782ac456"
+			},
+			"wild_top_yellowcoat": { // Localized name: SCAV Yellow Coat
+				"hands": "6197aca964ae5436d76c1f98",
+				"body": "618d1af10a5a59657e5f56f3",
+				"id": "66a258ffd44d4c4b708cf7fc"
+			},
+			"Top_BOSS_Blackknight": { // Localized name: Knight's Quarter-Zip Shirt & Patches
+				"hands": "66a2578987ab24fc2a96a009",
+				"body": "628796f2af0a053a6672c29a",
+				"id": "66a259095102e737db621905"
+			},
+			"Top_BOSS_BigPipe": { // Localized name: Big Pipe's Quarter-Zip Shirt
+				"hands": "66a257801da82820cdba09c0",
+				"body": "6287b16b05846043f15a790d",
+				"id": "66a2591e3761c0c6ee3e120e"
+			},
+			"Top_BOSS_Birdeye": { // Localized name: Birdeye's Sweater & Shemagh
+				"hands": "66a257841acb14f164477285",
+				"body": "628a6801805c5b6c100cc200",
+				"id": "66a2592a6b1df847bc3524ac"
+			},
+			"Top_BOSS_Zryachi": { // Localized name: Zryachiy's Ghillie Suit Top
+				"hands": "66a257a7c9b69da749500caf",
+				"body": "63628b825c1b30a79d09ccb9",
+				"id": "66a2593329bb1f6f5165bc55"
+			},
+			"Top_BOSS_Zryachi_hooddown": { // Localized name: Zryachiy's Ghillie Suit Top (Hood Down)
+				"hands": "66a257a7c9b69da749500caf",
+				"body": "68ebe68fee0fae95280cf780",
+				"id": "68ee81c0920831b641080d7f"
+			},
+			"wild_body_victory": { // Localized name: SCAV "Victory" Jacket
+				"hands": "6391c6205dbbdb3b1b049840",
+				"body": "637df28ac22da5bb8d046935",
+				"id": "66a25936fa20fd14b0d4b0ad"
+			},
+			"Top_BOSS_Kaban": { // Localized name: Kaban's Pullover & Long Coat
+				"hands": "66a25790f60df29d328038db",
+				"body": "648067b8aa32c2049f098463",
+				"id": "66a2593faae89d275adbb738"
+			},
+			"wild_body_feldparka": { // Localized name: Bundeswehr Feldparka
+				"hands": "64ac23c449d74fd5ec0a124e",
+				"body": "64a2edba08d26f8d62049c06",
+				"id": "66a2594ae55dd274d4020892"
+			},
+			"Top_BOSS_Kolontai": { // Localized name: Kollontay's Armored Blue Tiger Top
+				"hands": "66a25796aa1f7ae561cf325f",
+				"body": "654b5eb7a29f3736215dd030",
+				"id": "66a25954c8242edbdc70879f"
+			},
+			"wild_security_body_bratva_1": { // Localized name: SCAV Leather Mobster Jacket
+				"hands": "66a257aa420d1143e2a4d8aa",
+				"body": "65749b8fe32c4e3f7907bf42",
+				"id": "66a2595e5f3b014c96666890"
+			},
+			"wild_security_body_bratva_2": { // Localized name: SCAV Leather Mobster Jacket (Zipped)
+				"hands": "66a257adb60eae28a2c1986b",
+				"body": "65749ba32fdb04fb79092d37",
+				"id": "66a25966f78c597fec6c639b"
+			},
+			"Top_BOSS_Partizan": { // Localized name: Partisan's Winter Jacket
+				"hands": "6764d7a26b1c1b1d3fffaa2b",
+				"body": "66aa5d36f641b13ad238f8c3",
+				"id": "6764d55226c607ad42f6d6c0"
+			}
+		},
+		"lowers": {
+			"wild_feet": { // Localized name: SCAV Jeans
+				"feet": "5cc2e5d014c02e15d53d9c03",
+				"id": "66a2596ecd2a6fa35961de0a"
+			},
+			"wild_feet_1": { // Localized name: SCAV Military Pants
+				"feet": "5cde9fb87d6c8b0474535da9",
+				"id": "66a2596c0db81d88c4f7c68c"
+			},
+			"wild_feet_2": { // Localized name: SCAV Gorka Pants
+				"feet": "5d28af3486f774292364a6e7",
+				"id": "66a2597271700369d21ee70d"
+			},
+			"Wild_Dealmaker_feet": { // Localized name: Reshala's Kryptek Pants
+				"feet": "5d28b3a186f7747f7e69ab8c",
+				"id": "66a259758a0d001755ee5986"
+			},
+			"wild_security_feet_1": { // Localized name: GUARD MVD Pants (Gray-Blue Kamysh)
+				"feet": "5d28af5386f774292364a6e8",
+				"id": "66a25978a06a7358be88d72e"
+			},
+			"wild_pmcBot_feet": { // Localized name: RAIDER Pants
+				"feet": "5d28af7886f77429275dba25",
+				"id": "66a2597be8f7c15e44443955"
+			},
+			"Pants_BOSS_Glukhar": { // Localized name: Glukhar's Black Jeans
+				"feet": "5d5e7f2a86f77427997cfb80",
+				"id": "66a2597f7125561227c5b383"
+			},
+			"Pants_BOSS_Shturman": { // Localized name: Shturman's DPM Pants
+				"feet": "5d5e7f3c86f7742797262063",
+				"id": "66a25981d8ce351fdaf4ee13"
+			},
+			"Pants_security_Gorka4": { // Localized name: GUARD Gorka 4 Pants
+				"feet": "5d5e7f4986f7746956659f8a",
+				"id": "66a25985cfaa5daddf043475"
+			},
+			"Pants_security_Flora": { // Localized name: GUARD Flora Pants
+				"feet": "5d5e7f8986f7742798716582",
+				"id": "66a2598856e58dae9c33bf82"
+			},
+			"scav_kit_lower_sklon": { // Localized name: SCAV Sklon Pants
+				"feet": "5df8a15186f77412640e2e6a",
+				"id": "66a2598bce7b791278ac6b05"
+			},
+			"Pants_BOSS_Sanitar": { // Localized name: Sanitar's Rain Boots
+				"feet": "5e99762586f77466320ff9a9",
+				"id": "66a2598ea4dc2d30842dcead"
+			},
+			"wild_feet_sweatpants": { // Localized name: SCAV Rain Boots
+				"feet": "5f5e410c6bdad616ad46d60b",
+				"id": "66a25991764ca0c5abcd81d3"
+			},
+			"wild_feet_wasatch": { // Localized name: SCAV Browning Wasatch Pants
+				"feet": "5f5e41366760b4138443b343",
+				"id": "66a259955dc2644097ac360b"
+			},
+			"wild_feet_slimPants": { // Localized name: SCAV Drystch Pants
+				"feet": "5f5e41576760b4138443b344",
+				"id": "66a25998d89be9345cde182b"
+			},
+			"pants_cultist_01": { // Localized name: Cultist Pants 1
+				"feet": "5fb535bd1c69e5198e234125",
+				"id": "66a2599a1de9ee22aba0cdb8"
+			},
+			"pants_cultist_02": { // Localized name: Cultist Pants 2
+				"feet": "5fb535cf1c69e5198e234126",
+				"id": "66a2599e50651d1eeadc3440"
+			},
+			"wild_feet_scavelite_taclite": { // Localized name: RAIDER Taclite Pro Ripstop Pants
+				"feet": "6033a430ed2e0509b15f9033",
+				"id": "66a259a1fa8d47b051f9953f"
+			},
+			"pants_boss_tagilla": { // Localized name: Tagilla's Crye G3 Combat Pants (Multicam Black)
+				"feet": "609e86c09776a947754429b2",
+				"id": "66a259a5ec21b527cd28ca9b"
+			},
+			"wild_feet_bomber": { // Localized name: SCAV "Bro" Running Pants
+				"feet": "6193be546e5968395b260157",
+				"id": "66a259a85409b62fcc979f96"
+			},
+			"wild_pants_yellowcoat": { // Localized name: SCAV Izlom Pants
+				"feet": "61922589bb2cea6f7a22d964",
+				"id": "66a259ab87e544e8902409f6"
+			},
+			"Wild_Killa_feet": { // Localized name: Adik Tracksuit Pants
+				"feet": "5cdea3c47d6c8b0475341734",
+				"id": "66a259aee7ed0609ca9fefa9"
+			},
+			"Pants_BOSS_Blackknight": { // Localized name: Knight's Combat Pants & Ammo Pouch
+				"feet": "628771f70828252c7a28b961",
+				"id": "66a259b05b2be0551c7321f8"
+			},
+			"Pants_BOSS_BigPipe": { // Localized name: Big Pipe's Combat Pants & Grenade Belt
+				"feet": "6287b14b66bb7d4a3c32bc94",
+				"id": "66a259b4418602c280a664a3"
+			},
+			"Pants_BOSS_Birdeye": { // Localized name: Birdeye's Woodland Pants & Chemlight Pouch
+				"feet": "628a4645c9327c7587388849",
+				"id": "66a259b6d30196f0c841920e"
+			},
+			"Pants_BOSS_Zryachi": { // Localized name: Zryachiy's Ghillie Suit Pants
+				"feet": "6361216278f9ab270a0a48d9",
+				"id": "66a259b988750583c158b9eb"
+			},
+			"wild_feet_victory": { // Localized name: SCAV "Victory" Jeans
+				"feet": "637df25a1e688345e1097bd4",
+				"id": "66a259bc0080c7eb925dbc08"
+			},
+			"Pants_BOSS_Kaban": { // Localized name: Kaban's XXXXL Sweatpants
+				"feet": "64806edf77c11aeac5078e33",
+				"id": "66a259c041749d56df37e847"
+			},
+			"wild_feet_feldparka": { // Localized name: SCAV Faded Denim Jeans & Kneepad
+				"feet": "64a2e970a74bb33d140e6dc5",
+				"id": "66a259c2edb03ce189f86fe6"
+			},
+			"Pants_BOSS_Kolontai": { // Localized name: Kollontay's Padded Camo Pants
+				"feet": "654a2bc5ee6e547e9f6238e7",
+				"id": "66a259c5376d7b2f69eb0938"
+			},
+			"wild_security_feet_bratva_1": { // Localized name: SCAV Dry Denim Jeans
+				"feet": "65749c05e0423b9ebe0c79c7",
+				"id": "66a259c812532c98bdfdfbc1"
+			},
+			"wild_security_feet_bratva_2": { // Localized name: SCAV Blue Jeans with Mag Pouch
+				"feet": "65749c1fe32c4e3f7907bf47",
+				"id": "66a259cb6eafa833945267b2"
+			},
+			"Pants_BOSS_Partizan": { // Localized name: Partisan's Olive Gorka Pants
+				"feet": "66aa5bba10d2d4006a3c4a84",
+				"id": "6764e42143b94f27ae0e0941"
+			}
+		}
+	},
+	"customEntries": { // These are custom entries for uppers.
+		"shturmanTop": {
+			"_id": "66a25a1718eca9b1104be619",
+			"_name": "wild_Shturman_body_nohead",
+			"_parent": "5cc0868e14c02e000c6bea68",
+			"_type": "Item",
+			"_props": {
+				"Name": "wild_Shturman_body_nohead",
+				"ShortName": "wild_Shturman_body_nohead",
+				"Description": "wild_Shturman_body_nohead",
+				"Side": [
+					"Savage",
+					"Usec",
+					"Bear"
+				],
+				"BodyPart": "Body",
+				"Prefab": {
+					"path": "assets/content/characters/character/alltheclothes/top_boss_shturman.skin.bundle",
+					"rcid": ""
+				},
+				"WatchPrefab": {
+					"path": "",
+					"rcid": ""
+				},
+				"IntegratedArmorVest": false,
+				"WatchPosition": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"WatchRotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			"_proto": "5cdea33e7d6c8b0474535dac"
+		},
+		"shturmanTopAlt": {
+			"_id": "66a25a33bbfb47717a057581",
+			"_name": "wild_Shturman_body_nohead_alt",
+			"_parent": "5cc0868e14c02e000c6bea68",
+			"_type": "Item",
+			"_props": {
+				"Name": "wild_Shturman_body",
+				"ShortName": "wild_Shturman_body",
+				"Description": "wild_Shturman_body",
+				"Side": [
+					"Savage",
+					"Usec",
+					"Bear"
+				],
+				"BodyPart": "Body",
+				"Prefab": {
+					"path": "assets/content/characters/character/alltheclothes/top_boss_shturman_alt.skin.bundle",
+					"rcid": ""
+				},
+				"WatchPrefab": {
+					"path": "",
+					"rcid": ""
+				},
+				"IntegratedArmorVest": false,
+				"WatchPosition": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"WatchRotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			"_proto": "5cdea33e7d6c8b0474535dac"
+		},
+		"tagillaTop": {
+			"_id": "66a25a3af12f29d8a2599527",
+			"_name": "top_boss_tagilla_nohead",
+			"_parent": "5cc0868e14c02e000c6bea68",
+			"_type": "Item",
+			"_props": {
+				"Name": "wild_Killa_body",
+				"ShortName": "wild_Killa_body",
+				"Description": "wild_Killa_body",
+				"Side": [
+					"Savage",
+					"Usec",
+					"Bear"
+				],
+				"BodyPart": "Body",
+				"Prefab": {
+					"path": "assets/content/characters/character/alltheclothes/top_boss_tagilla.skin.bundle",
+					"rcid": ""
+				},
+				"WatchPrefab": {
+					"path": "",
+					"rcid": ""
+				},
+				"IntegratedArmorVest": false,
+				"WatchPosition": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"WatchRotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			"_proto": "5cdea33e7d6c8b0474535dac"
+		},
+		"zryachiTopHoodDown": {
+			"_id": "68ebe68fee0fae95280cf780",
+			"_name": "Top_BOSS_Zryachi_hooddown",
+			"_parent": "5cc0868e14c02e000c6bea68",
+			"_type": "Item",
+			"_props": {
+				"Name": "Top_BOSS_Zryachi_hooddown",
+				"ShortName": "Top_BOSS_Zryachi_hooddown",
+				"Description": "Top_BOSS_Zryachi_hooddown",
+				"Side": [
+					"Savage",
+					"Usec",
+					"Bear"
+				],
+				"BodyPart": "Body",
+				"Prefab": {
+					"path": "assets/content/characters/character/alltheclothes/top_boss_zryachiy_hooddown.skin.bundle",
+					"rcid": ""
+				},
+				"WatchPrefab": {
+					"path": "",
+					"rcid": ""
+				},
+				"IntegratedArmorVest": false,
+				"WatchPosition": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"WatchRotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			"_proto": "5cdea33e7d6c8b0474535dac"
+		}
+	},
+	"headEntries": { // These are custom head entries.
+		"tagillaHead": {
+			"_id": "66a25a47f878d663dbe9c302",
+			"_name": "tagillaHead",
+			"_parent": "5cc085e214c02e000c6bea67",
+			"_type": "Item",
+			"_props": {
+				"Name": "tagillaHead",
+				"ShortName": "tagillaHead",
+				"Description": "tagillaHead",
+				"Side": [
+					"Usec",
+					"Bear",
+					"Savage"
+				],
+				"BodyPart": "Head",
+				"Prefab": {
+					"path": "assets/content/characters/character/alltheclothes/head_boss_tagilla.skin.bundle",
+					"rcid": ""
+				},
+				"WatchPrefab": {
+					"path": "",
+					"rcid": ""
+				},
+				"IntegratedArmorVest": false,
+				"WatchPosition": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"WatchRotation": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			},
+			"_proto": "5cde9ff17d6c8b0474535daa"
+		}
+	},
+	"handEntries": { // These are custom hand entries.
+		"hands_boss_big_pipe": { // Name
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_big_pipe.skin.bundle", // Mesh path
+			"id": "66a257801da82820cdba09c0" // MongoID
+		},
+		"hands_boss_birdeye": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_birdeye.skin.bundle",
+			"id": "66a257841acb14f164477285"
+		},
+		"hands_boss_blackknight": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_blackknight.skin.bundle",
+			"id": "66a2578987ab24fc2a96a009"
+		},
+		"hands_boss_glukhar": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_glukhar.skin.bundle",
+			"id": "66a2578c98a33aac05c8d5da"
+		},
+		"hands_boss_kaban": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_kaban.skin.bundle",
+			"id": "66a25790f60df29d328038db"
+		},
+		"hands_boss_killa": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_killa.skin.bundle",
+			"id": "66a25793a00bd14202fa1342"
+		},
+		"hands_boss_kolontai": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_kolontai.skin.bundle",
+			"id": "66a25796aa1f7ae561cf325f"
+		},
+		"hands_boss_reshala": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_reshala.skin.bundle",
+			"id": "66a257998e8900f1b7744e82"
+		},
+		"hands_boss_sanitar": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_sanitar.skin.bundle",
+			"id": "66a2579dd7c05ac27b7b090b"
+		},
+		"hands_boss_shturman": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_shturman.skin.bundle",
+			"id": "66a257a0b33deea01b59570b"
+		},
+		"hands_boss_tagilla": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_tagilla.skin.bundle",
+			"id": "66a257a4a5b72803728b43c9"
+		},
+		"hands_boss_zryachiy": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_zryachiy.skin.bundle",
+			"id": "66a257a7c9b69da749500caf"
+		},
+		"hands_scav_bratva1": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_bratva1.skin.bundle",
+			"id": "66a257aa420d1143e2a4d8aa"
+		},
+		"hands_scav_bratva2": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_bratva2.skin.bundle",
+			"id": "66a257adb60eae28a2c1986b"
+		},
+		"hands_scav_cultist1": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_cultist1.skin.bundle",
+			"id": "66a257b0557e1310189c6ea9"
+		},
+		"hands_scav_cultist2": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_cultist2.skin.bundle",
+			"id": "66a257b8878cb262bdc7783f"
+		},
+		"hands_scav_gorka4": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_gorka4.skin.bundle",
+			"id": "66a257bca1973c6788cb0cfc"
+		},
+		"hands_scav_husky": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_husky.skin.bundle",
+			"id": "66a257bfa270e6b4d2d2b250"
+		},
+		"hands_scav_scavelite": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_scavelite.skin.bundle",
+			"id": "66a257c2c97c86f98c2d91ce"
+		},
+		"hands_scav_security1": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_security1.skin.bundle",
+			"id": "66a257c524aaa24a3ffc7a40"
+		},
+		"hands_scav_security2": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_security2.skin.bundle",
+			"id": "66a257c8ed748bf793da3e78"
+		},
+		"hands_scav_tatu1": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_tatu1.skin.bundle",
+			"id": "66a257cbeffb1bfc57d168be"
+		},
+		"hands_scav_tatu2": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_tatu2.skin.bundle",
+			"id": "66a257ce2f6fdb390b0de6a6"
+		},
+		"hands_scav_wildbody2": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_wildbody2.skin.bundle",
+			"id": "66a257d56c9eec11b2527f63"
+		},
+		"hands_scav_wildbody3": {
+			"bundle": "assets/content/hands/alltheclothes/hands_scav_wildbody3.skin.bundle",
+			"id": "66a257d786e1ec519f8ad1b1"
+		},
+		"hands_boss_partizan": {
+			"bundle": "assets/content/hands/alltheclothes/hands_boss_partizan.skin.bundle",
+			"id": "6764d7a26b1c1b1d3fffaa2b"
+		}
+	}
+}

@@ -1,0 +1,253 @@
+{
+	"manifest": 
+	[
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_big_pipe.skin.bundle",
+			"dependencyKeys": 
+			[
+		  		"shaders",
+		  		"cubemaps"
+			]
+	  	},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_birdeye.skin.bundle",
+			"dependencyKeys": 
+			[
+		  		"shaders",
+		  		"cubemaps"
+			]
+	  	},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_blackknight.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_glukhar.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_killa.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_kaban.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_kolontai.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_reshala.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_sanitar.skin.bundle",
+			"dependencyKeys": 
+			[
+		  		"shaders",
+		  		"cubemaps"
+			]
+	  	},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_shturman.skin.bundle",
+			"dependencyKeys": 
+			[
+		  		"shaders",
+		  		"cubemaps"
+			]
+	  	},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_tagilla.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_zryachiy.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_bratva1.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_bratva2.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_cultist1.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_cultist2.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_gorka4.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_husky.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_scavelite.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_security1.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_security2.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_tatu1.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_tatu2.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_wildbody2.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_scav_wildbody3.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/hands/alltheclothes/hands_boss_partizan.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/characters/character/alltheclothes/head_boss_tagilla.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/characters/character/alltheclothes/top_boss_shturman.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/characters/character/alltheclothes/top_boss_shturman_alt.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/characters/character/alltheclothes/top_boss_tagilla.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		},
+		{
+			"key": "assets/content/characters/character/alltheclothes/top_boss_zryachiy_hooddown.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
+		}
+	]
+}

@@ -1,0 +1,8 @@
+.vs/
+bin/
+obj/
+Properties/
+.editorconfig
+*.user
+
+*.bundle

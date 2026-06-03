@@ -1,0 +1,567 @@
+﻿{
+	"5fc6144b0b735e7b024c76e7": {
+		"Description": "Дикий - Стасик",
+		"Name": "Дикий - Стасик",
+		"ShortName": "Дикий - Стасик"
+	},
+	"5fb5297a0359a84b77066e56": {
+		"Description": "Сектант Воин 1",
+		"Name": "Сектант Воин 1",
+		"ShortName": "Сектант Воин 1"
+	},
+	"5fc614390b735e7b024c76e6": {
+		"Description": "Дикий - Миша",
+		"Name": "Дикий - Миша",
+		"ShortName": "Дикий - Миша"
+	},
+	"5d28b03e86f7747f7e69ab8a": {
+		"Description": "Килла",
+		"Name": "Килла",
+		"ShortName": "Килла"
+	},
+	"5d28afe786f774292668618d": {
+		"Description": "Один единственный - Окурок",
+		"Name": "Окурок",
+		"ShortName": "Окурок"
+	},
+	"5fc614290b735e7b024c76e5": {
+		"Description": "Дикий - Дрозд",
+		"Name": "Дикий - Дрозд",
+		"ShortName": "Дикий - Дрозд"
+	},
+	"5fc613c80b735e7b024c76e2": {
+		"Description": "Дикий - Ярик",
+		"Name": "Дикий - Ярик",
+		"ShortName": "Дикий - рик"
+	},
+	"5d5e805d86f77439eb4c2d0e": {
+		"Description": "Глухарь",
+		"Name": "Глухарь",
+		"ShortName": "Глухарь"
+	},
+	"5fb52a3a1c69e5198e234118": {
+		"Description": "Сектант Жрец",
+		"Name": "Сектант Жрец",
+		"ShortName": "Сектант Жрец"
+	},
+	"5d28b01486f77429242fc898": {
+		"Description": "Решала",
+		"Name": "Решала",
+		"ShortName": "Решала"
+	},
+	"5e99767c86f7741ac7399393": {
+		"Description": "Санитар",
+		"Name": "Санитар",
+		"ShortName": "Санитар"
+	},
+	"5cc2e4d014c02e000d0115f8": {
+		"Description": "Дикий - Самогон",
+		"Name": "Дикий - Самогон",
+		"ShortName": "Дикий - Самогон"
+	},
+	"5f68c4c217d579077152a252": {
+		"Description": "Дикий - Мозг",
+		"Name": "Дикий - Мозг",
+		"ShortName": "Дикий - Мозг"
+	},
+	"5fc615460b735e7b024c76eb": {
+		"Description": "Решала",
+		"Name": "Решала",
+		"ShortName": "Решала"
+	},
+	"5fb52a537b5d1342ee24bd57": {
+		"Description": "Сектант Воин 2",
+		"Name": "Сектант Воин 2",
+		"ShortName": "Сектант Воин 2"
+	},
+	"5f68c4a7c174a17c0f4c8945": {
+		"Description": "Дикий - Кот",
+		"Name": "Дикий - Кот",
+		"ShortName": "Дикий - Кот"
+	},
+	"5cde9ff17d6c8b0474535daa": {
+		"Description": "Дикий - Танкист",
+		"Name": "Дикий - Танкист",
+		"ShortName": "Дикий - Танкист"
+	},
+	"5fc614130b735e7b024c76e4": {
+		"Description": "Дикий - Саня",
+		"Name": "Дикий - Саня",
+		"ShortName": "Дикий - Саня"
+	},
+	"5fc613e10b735e7b024c76e3": {
+		"Description": "Дикий - Сева",
+		"Name": "Дикий-Сева",
+		"ShortName": "Дикий-Сева"
+	},
+	"5fc6155b0b735e7b024c76ec": {
+		"Description": "Глухарь",
+		"Name": "Глухарь",
+		"ShortName": "Глухарь"
+	},
+	"5fc615710b735e7b024c76ed": {
+		"Description": "Санитар",
+		"Name": "Санитар",
+		"ShortName": "Санитар"
+	},
+	"628b57d800f171376e7b2634": {
+		"Description": "Birdeye",
+		"Name": "Birdeye",
+		"ShortName": "Birdeye"
+	},
+	"62875ad50828252c7a28b95c": {
+		"Description": "Knight",
+		"Name": "Knight",
+		"ShortName": "Knight"
+	},
+	"6287b0d239d8207cb27d66c7": {
+		"Description": "Big Pipe",
+		"Name": "Big Pipe",
+		"ShortName": "Big Pipe"
+	},
+	"66a25a47f878d663dbe9c302": {
+		"Description": "Тагилла",
+		"Name": "Тагилла",
+		"ShortName": "Тагилла"
+	},
+	"636129784aa74b8fe30ab418": {
+		"Description": "Зрячий",
+		"Name": "Зрячий",
+		"ShortName": "Зрячий"
+	},
+	"64809e3077c11aeac5078e3c": {
+		"Description": "Кабан",
+		"Name": "Кабан",
+		"ShortName": "Кабан"
+	},
+	"654b5ed58558fd71f97254f4": {
+		"Description": "Коллонтай",
+		"Name": "Коллонтай",
+		"ShortName": "Коллонтай"
+	},
+	"66a258ca131ef292c721e9fa": {
+		"Description": "",
+		"Name": "Балахон Сектанта Жреца",
+		"ShortName": ""
+	},
+	"66a258d44027130800bb9978": {
+		"Description": "",
+		"Name": "Балахон Сектанта 1",
+		"ShortName": ""
+	},
+	"66a2593faae89d275adbb738": {
+		"Description": "",
+		"Name": "Свитер и длинный плащ Кабана",
+		"ShortName": ""
+	},
+	"66a2594ae55dd274d4020892": {
+		"Description": "",
+		"Name": "Полевая парка Бундесвера Дикого",
+		"ShortName": ""
+	},
+	"66a2599a1de9ee22aba0cdb8": {
+		"Description": "",
+		"Name": "Штаны Сектанта 1",
+		"ShortName": ""
+	},
+	"66a2599e50651d1eeadc3440": {
+		"Description": "",
+		"Name": "Штаны Сектанта 2",
+		"ShortName": ""
+	},
+	"66a25885fe2cf952aa1fe3b5": {
+		"Description": "",
+		"Name": "Футболочка Свиты",
+		"ShortName": ""
+	},
+	"66a2583d4e0569aaa7014018": {
+		"Description": "",
+		"Name": "Куртка Сотрудника ДПС",
+		"ShortName": ""
+	},
+	"66a25865a63c1499f7c11ceb": {
+		"Description": "",
+		"Name": "Куртка Парка Штурмана",
+		"ShortName": ""
+	},
+	"66a2586fff1bb6e3031a1eea": {
+		"Description": "",
+		"Name": "Куртка Парка Штурмана (Опущенный капюшон)",
+		"ShortName": ""
+	},
+	"66a2597271700369d21ee70d": {
+		"Description": "",
+		"Name": "Штаны Дикого (Горка)",
+		"ShortName": ""
+	},
+	"66a25847bf2113d103de3045": {
+		"Description": "",
+		"Name": "Свитер Охрана",
+		"ShortName": ""
+	},
+	"66a2597be8f7c15e44443955": {
+		"Description": "",
+		"Name": "Штаны Рейдера",
+		"ShortName": ""
+	},
+	"66a25855b8ac917bfc1cfd52": {
+		"Description": "",
+		"Name": "Куртка Рейдера",
+		"ShortName": ""
+	},
+	"66a259758a0d001755ee5986": {
+		"Description": "",
+		"Name": "Штаны Kryptek Решалы",
+		"ShortName": ""
+	},
+	"66a25833df0de64791228fe9": {
+		"Description": "",
+		"Name": "Кожаная Куртка Решалы",
+		"ShortName": ""
+	},
+	"66a2588f5c3d6f142b3a0e91": {
+		"Description": "",
+		"Name": "Футболочка Свиты (с татуировками)",
+		"ShortName": ""
+	},
+	"66a25897df999bf137f59a7b": {
+		"Description": "",
+		"Name": "Куртка Хаски Хардшелл",
+		"ShortName": ""
+	},
+	"66a258b857b4dbe5bb3f6a35": {
+		"Description": "",
+		"Name": "Медицинская форма Санитара",
+		"ShortName": ""
+	},
+	"66a2598ea4dc2d30842dcead": {
+		"Description": "",
+		"Name": "Штаны Санитара",
+		"ShortName": ""
+	},
+	"66a258ffd44d4c4b708cf7fc": {
+		"Description": "",
+		"Name": "Желтое Пальто Дикого",
+		"ShortName": ""
+	},
+	"66a259ab87e544e8902409f6": {
+		"Description": "",
+		"Name": "Камуфляжные Штаны Дикого",
+		"ShortName": ""
+	},
+	"66a258a02d7e21a0f4a65671": {
+		"Description": "",
+		"Name": "Горка4 вверх",
+		"ShortName": ""
+	},
+	"66a25985cfaa5daddf043475": {
+		"Description": "",
+		"Name": "Горка4 штаны",
+		"ShortName": ""
+	},
+	"66a2598856e58dae9c33bf82": {
+		"Description": "",
+		"Name": "Штаны Флора Свиты",
+		"ShortName": ""
+	},
+	"66a25981d8ce351fdaf4ee13": {
+		"Description": "",
+		"Name": "Штаны Штурмана",
+		"ShortName": ""
+	},
+	"66a25823bf3615f9a963992a": {
+		"Description": "",
+		"Name": "Куртка Дикого",
+		"ShortName": ""
+	},
+	"66a2580d60dc871214f6c609": {
+		"Description": "",
+		"Name": "Вверх дикого (Вар. 1)",
+		"ShortName": ""
+	},
+	"66a25978a06a7358be88d72e": {
+		"Description": "",
+		"Name": "Штаны МВД (Серо-Синий Камыш)",
+		"ShortName": ""
+	},
+	"66a2587c9c2b37866d4a934f": {
+		"Description": "",
+		"Name": "Футболка Глухаря с Пакой",
+		"ShortName": ""
+	},
+	"66a2597f7125561227c5b383": {
+		"Description": "",
+		"Name": "Черные Джинсы Глухаря",
+		"ShortName": ""
+	},
+	"66a259a1fa8d47b051f9953f": {
+		"Description": "",
+		"Name": "Штаны Таклайт Рейдера",
+		"ShortName": ""
+	},
+	"66a258e3c6b9ee37e81abcd2": {
+		"Description": "",
+		"Name": "Торс Тагиллы",
+		"ShortName": ""
+	},
+	"66a259a5ec21b527cd28ca9b": {
+		"Description": "",
+		"Name": "Штаны Crye G3 Combat pants (Multicam Black) Тагиллы",
+		"ShortName": ""
+	},
+	"66a2596c0db81d88c4f7c68c": {
+		"Description": "",
+		"Name": "Военные штаны Дикого",
+		"ShortName": ""
+	},
+	"66a2581a8e674d5e474a0273": {
+		"Description": "",
+		"Name": "Вверх дикого (Вар. 3)",
+		"ShortName": ""
+	},
+	"66a25802209d339b12dab6aa": {
+		"Description": "",
+		"Name": "Вверх дикого (Вар. 2)",
+		"ShortName": ""
+	},
+	"66a2596ecd2a6fa35961de0a": {
+		"Description": "",
+		"Name": "Джинсы Дикого",
+		"ShortName": ""
+	},
+	"66a25998d89be9345cde182b": {
+		"Description": "",
+		"Name": "Штаны Дрыща Дикого",
+		"ShortName": ""
+	},
+	"66a25991764ca0c5abcd81d3": {
+		"Description": "",
+		"Name": "Штаны с Сапогами Дикого",
+		"ShortName": ""
+	},
+	"66a259955dc2644097ac360b": {
+		"Description": "",
+		"Name": "Штаны Browning Wasatch Дикого",
+		"ShortName": ""
+	},
+	"66a259aee7ed0609ca9fefa9": {
+		"Description": "",
+		"Name": "Штанишки Адик",
+		"ShortName": ""
+	},
+	"66a258c29f5820847f97dda3": {
+		"Description": "",
+		"Name": "Куртка Мотокросс Дикого",
+		"ShortName": ""
+	},
+	"66a258a9d499bd2e3ae151ca": {
+		"Description": "",
+		"Name": "Куртка Метеор Дикого",
+		"ShortName": ""
+	},
+	"66a258fb87757fff782ac456": {
+		"Description": "",
+		"Name": "Куртка Бомбер Дикого",
+		"ShortName": ""
+	},
+	"66a259a85409b62fcc979f96": {
+		"Description": "",
+		"Name": "Штаны \"БРО\" Дикого",
+		"ShortName": ""
+	},
+	"66a258b00dbcfbc5da693c7b": {
+		"Description": "",
+		"Name": "Олимпийка \"РОССИЯ\" Дикого ",
+		"ShortName": ""
+	},
+	"66a2598bce7b791278ac6b05": {
+		"Description": "",
+		"Name": "Штаны Склон Дикого",
+		"ShortName": ""
+	},
+	"66a258debfe22e94946ad169": {
+		"Description": "",
+		"Name": "Тактическая Куртка Дикого",
+		"ShortName": ""
+	},
+	"66a258d9b62c6a1374bdb20a": {
+		"Description": "",
+		"Name": "Куртка Охотника",
+		"ShortName": ""
+	},
+	"66a2591e3761c0c6ee3e120e": {
+		"Description": "",
+		"Name": "Боевая Рубаха Big Pipe",
+		"ShortName": ""
+	},
+	"66a2592a6b1df847bc3524ac": {
+		"Description": "",
+		"Name": "Свитер и Шемаг Birdeye",
+		"ShortName": ""
+	},
+	"66a259095102e737db621905": {
+		"Description": "",
+		"Name": "Боевая Рубаха С Патчами Knight",
+		"ShortName": ""
+	},
+	"66a259b6d30196f0c841920e": {
+		"Description": "",
+		"Name": "Штаны Woodland С Поясной Сумкой Birdeye",
+		"ShortName": ""
+	},
+	"66a259b4418602c280a664a3": {
+		"Description": "",
+		"Name": "Боевые Штаны С Гранатным Поясом Big pipe",
+		"ShortName": ""
+	},
+	"66a259b05b2be0551c7321f8": {
+		"Description": "",
+		"Name": "Боевые Штаны с Вар Белтом Knight",
+		"ShortName": ""
+	},
+	"66a2593329bb1f6f5165bc55": {
+		"Description": "",
+		"Name": "Маскировочный костюм Зрячего",
+		"ShortName": ""
+	},
+	"68ee81c0920831b641080d7f": {
+		"Description": "",
+		"Name": "Маскировочный костюм Зрячего (Капюшон опущен)",
+		"ShortName": ""
+	},
+	"66a25936fa20fd14b0d4b0ad": {
+		"Description": "",
+		"Name": "Куртка \"Victory\" Дикого",
+		"ShortName": ""
+	},
+	"66a259b988750583c158b9eb": {
+		"Description": "",
+		"Name": "Маскировочные штаны Зрячего",
+		"ShortName": ""
+	},
+	"66a259bc0080c7eb925dbc08": {
+		"Description": "",
+		"Name": "Джинсы \"Victory\" Дикого",
+		"ShortName": ""
+	},
+	"66a259c041749d56df37e847": {
+		"Description": "",
+		"Name": "XXXXL Спортивные штаны Кабана",
+		"ShortName": ""
+	},
+	"66a259c2edb03ce189f86fe6": {
+		"Description": "",
+		"Name": "Выцветшие джинсы с наколенником Дикого",
+		"ShortName": ""
+	},
+	"66a2595e5f3b014c96666890": {
+		"Description": "",
+		"Name": "Кожаная куртка Дикого",
+		"ShortName": ""
+	},
+	"66a25966f78c597fec6c639b": {
+		"Description": "",
+		"Name": "Кожаная куртка Дикого (Застёгнутая)",
+		"ShortName": ""
+	},
+	"66a25954c8242edbdc70879f": {
+		"Description": "",
+		"Name": "Боевой верх Коллонтая, серый камыш",
+		"ShortName": ""
+	},
+	"66a259c812532c98bdfdfbc1": {
+		"Description": "",
+		"Name": "Джинсы из сухого денима Дикого",
+		"ShortName": ""
+	},
+	"66a259cb6eafa833945267b2": {
+		"Description": "",
+		"Name": "Синии джинсы с патронташем Дикого",
+		"ShortName": ""
+	},
+	"66a259c5376d7b2f69eb0938": {
+		"Description": "",
+		"Name": "Штаны Коллонтая, серый камыш",
+		"ShortName": ""
+	},
+	"6353fe04f0de2294830a0dbe": {
+		"Description": "Big Pipe",
+		"Name": "Big Pipe",
+		"ShortName": "Big Pipe"
+	},
+	"6353fe34f0de2294830a0dbf": {
+		"Description": "Birdeye",
+		"Name": "Birdeye",
+		"ShortName": "Birdeye"
+	},
+	"6353fea0a644ca0c510d1dd8": {
+		"Description": "Килла",
+		"Name": "Килла",
+		"ShortName": "Килла"
+	},
+	"6353fe74a644ca0c510d1dd6": {
+		"Description": "Knight",
+		"Name": "Knight",
+		"ShortName": "Knight"
+	},
+	"6353fec227f75f803206e60a": {
+		"Description": "Тагилла",
+		"Name": "Тагилла",
+		"ShortName": "Тагилла"
+	},
+	"646e46ca286188c5480a1a37": {
+		"Description": "Blood",
+		"Name": "Blood",
+		"ShortName": "Blood"
+	},
+	"646e46d8f5438077af029fdb": {
+		"Description": "Hound",
+		"Name": "Hound",
+		"ShortName": "Hound"
+	},
+	"657c2ec38691e049d9662020": {
+		"Description": "Коллонтай",
+		"Name": "Коллонтай",
+		"ShortName": "Коллонтай"
+	},
+	"657c2eac0f47e02d4b377308": {
+		"Description": "Кабан",
+		"Name": "Кабан",
+		"ShortName": "Кабан"
+	},
+	"657c2ed3cf82c352301b830e": {
+		"Description": "Штурмана",
+		"Name": "Штурмана",
+		"ShortName": "Штурмана"
+	},
+	"6644d2da35d958070c02642c": {
+		"Description": "Голова Маникена",
+		"Name": "Голова Маникена",
+		"ShortName": "Голова Маникена"
+	},
+	"66a8ce418ea1637a3c1b2044": {
+		"Description": "Партизан",
+		"Name": "Партизан",
+		"ShortName": "Партизан"
+	},
+	"66aa5ca23d22c9416c010be0": {
+		"Description": "Партизан",
+		"Name": "Партизан",
+		"ShortName": "Партизан"
+	},
+	"6764d55226c607ad42f6d6c0": {
+		"Description": "",
+		"Name": "Зимняя Куртка Партизана",
+		"ShortName": ""
+	},
+	"6764e42143b94f27ae0e0941": {
+		"Description": "",
+		"Name": "Оливковые Горка Штаны Партизана",
+		"ShortName": ""
+	},
+	"67a22045cae994f25c087bb5": {
+		"Description": "Минотавра",
+		"Name": "Минотавра",
+		"ShortName": "Минотавра"
+	}
+}
