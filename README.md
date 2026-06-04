@@ -23,6 +23,24 @@ Remember, you can change your voice at any time in the game's Settings, in the A
 
 Feel free to leave a comment or contact me using Discord if you have any suggestions or have any issues!
 
+## ---BUILD INFO---
+
+Requirements:
+- .NET 9.0
+
+The following packages installed:
+- Newtonsoft.Json (`13.0.4`)
+- SPTarkov.Common (`4.0.0`)
+- SPTarkov.DI (`4.0.0`)
+- SPTarkov.Reflection (`4.0.0`)
+- SPTarkov.Server.Core (`4.0.0`)
+(You can select `Manage NuGet Packages...` within the Dependencies tab of Visual Studio to install them. Pay special attention to the version being installed, mods compiled with packages marked `4.0.13`, for example, will not run on any version below that.)
+
+Open AllTheClothes.sln with Visual Studio and build the mod in Release mode.
+Alternatively, run `dotnet build -c Release` from the project directory root.
+
+The output will be stored in the project's `bin\Release\` folder.
+
 ## ---INSTALL INFO---
 
 How to install:
@@ -115,7 +133,7 @@ If you're updating from an older version of the mod, please be sure to delete th
 #### v2.1.2 Changelog
 - Properly fixed the Shturman (Hood Down) variant (for real this time!)
 
-### v3.0.0 Changelog
+#### v3.0.0 Changelog
 - Complete rewrite for SPT 4.0 in C#, fixing several issues and expanding the configuration
 	- Please note that clothing can not be found on Fence on SPT version 4.0.0 and 4.0.1, the clothes will instead be found on Ragman on those versions regardless of config settings.
 - Updated typing for new EFT database requirements
@@ -129,6 +147,10 @@ If you're updating from an older version of the mod, please be sure to delete th
 - Locales updated to have a basic category for each clothing item
 
 ## ---SWAPPING HEADS---
+
+Note: An easier option than editing your profile by hand below is using the following mod: https://forge.sp-tarkov.com/mod/1277/wtt-head-and-voice-selector
+
+If you still want to manually edit your profile.json file, continue reading below.
 
 Make sure your server is shut down!
 
