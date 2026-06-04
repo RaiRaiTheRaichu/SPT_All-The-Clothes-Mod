@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Version>3.0.0</Version>
-    <OutputPath>bin\$(Configuration)\$(ProjectName)\$(AssemblyName)\</OutputPath>
+    <OutputPath>bin\$(Configuration)\SPT\user\mods\$(ProjectName)\$(AssemblyName)\</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
   <ItemGroup>
@@ -21,6 +21,12 @@
     <Content Include="db\**">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+	<Content Include="LICENSE">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+	<Content Include="README.md">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
@@ -29,7 +35,4 @@
     <PackageReference Include="SPTarkov.Reflection" Version="4.0.0" />
     <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0" />
   </ItemGroup>
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy /s /y &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\mods\csharp\AllTheClothes\bin\Release\AllTheClothes\AllTheClothes.dll&quot; &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\Server-csharp\SPTarkov.Server\bin\Debug\net9.0\user\mods\AllTheClothes\&quot;&#xD;&#xA;xcopy /s /y &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\mods\csharp\AllTheClothes\bin\Release\AllTheClothes\AllTheClothes.pdb&quot; &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\Server-csharp\SPTarkov.Server\bin\Debug\net9.0\user\mods\AllTheClothes\&quot;&#xD;&#xA;xcopy /s /y &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\mods\csharp\AllTheClothes\bin\Release\AllTheClothes\bundles\*&quot; &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\Server-csharp\SPTarkov.Server\bin\Debug\net9.0\user\mods\AllTheClothes\bundles\&quot;&#xD;&#xA;xcopy /s /y &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\mods\csharp\AllTheClothes\bin\Release\AllTheClothes\config\*&quot; &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\Server-csharp\SPTarkov.Server\bin\Debug\net9.0\user\mods\AllTheClothes\config\&quot;&#xD;&#xA;xcopy /s /y &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\mods\csharp\AllTheClothes\bin\Release\AllTheClothes\db\*&quot; &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\Server-csharp\SPTarkov.Server\bin\Debug\net9.0\user\mods\AllTheClothes\db\&quot;&#xD;&#xA;xcopy /s /y &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\mods\csharp\AllTheClothes\bin\Release\AllTheClothes\bundles.json*&quot; &quot;E:\RaiRais Projects\Programs\workspace\spt-aki\Server-csharp\SPTarkov.Server\bin\Debug\net9.0\user\mods\AllTheClothes\&quot;&#xD;&#xA;" />
-  </Target>
 </Project>
