@@ -41,6 +41,11 @@ Alternatively, run `dotnet build -c Release` from the project directory root.
 
 The output will be stored in the project's `bin\Release\` folder.
 
+BUNDLES ARE NOT INCLUDED ON THE REPO DUE TO FILE SIZE CONCERNS, please download them and add them to the AllTheClothes mod folder manually.
+https://drive.google.com/file/d/1sFOXYyheN4YQg3zUSfrl6kjkKSUrtgDU/view
+
+I will try to keep this link accurate and up-to-date with the required bundles to run the mod.
+
 ## ---INSTALL INFO---
 
 How to install:
