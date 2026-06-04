@@ -10,6 +10,7 @@ using SPTarkov.Server.Core.Servers;
 using System.Reflection;
 using SPTarkov.Server.Core.Models.Logging;
 using SPTarkov.Server.Core.Services;
+using System.Reflection.Metadata;
 
 namespace AllTheClothes
 {
@@ -19,11 +20,11 @@ namespace AllTheClothes
         public override string Name { get; init; } = "AllTheClothes";
         public override string Author { get; init; } = "RaiRaiTheRaichu";
         public override List<string>? Contributors { get; init; }
-        public override SemanticVersioning.Version Version { get; init; } = new("3.0.0");
+        public override SemanticVersioning.Version Version { get; init; } = new("3.0.1");
         public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
         public override List<string>? Incompatibilities { get; init; }
         public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
-        public override string? Url { get; init; } = "https://github.com/rairaitheraichu/spt-alltheclothes";
+        public override string? Url { get; init; } = "https://github.com/RaiRaiTheRaichu/SPT_All-The-Clothes-Mod";
         public override bool? IsBundleMod { get; init; } = true;
         public override string? License { get; init; } = "NCSA";
     }
@@ -32,17 +33,16 @@ namespace AllTheClothes
     public class DatabaseEdit(
         DatabaseServer databaseServer,
         ConfigServer configServer,
-        LocaleService localeService,
         DatabaseService databaseService,
         ISptLogger<DatabaseEdit> logger,
         ModHelper modHelper) : IOnLoad
     {
         private readonly DatabaseServer _databaseServer = databaseServer;
         private readonly ConfigServer _configServer = configServer;
-        private readonly LocaleService _localeService;
-        private readonly DatabaseService _databaseService;
         private readonly ISptLogger<DatabaseEdit> _logger = logger;
         private readonly ModHelper _modHelper = modHelper;
+
+        private readonly char OS_SEPARATOR = System.IO.Path.DirectorySeparatorChar;
 
         private ConfigType ModConfig;
 
@@ -50,7 +50,7 @@ namespace AllTheClothes
         {
             // Load config
             var modPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
-            ModConfig = _modHelper.GetJsonDataFromFile<ConfigType>(modPath + "\\config", "config.jsonc");
+            ModConfig = _modHelper.GetJsonDataFromFile<ConfigType>(modPath + OS_SEPARATOR + "config", "config.jsonc");
 
             // Handling for SPT version < 4.0.2, where Fence can not use the Services menu
             var SPTVersion = SPTarkov.Server.Core.Utils.ProgramStatics.SPT_VERSION();
@@ -119,7 +119,7 @@ namespace AllTheClothes
             }
             
             // Add localization entries
-            var localeDbPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()) + "\\db\\locale";
+            var localeDbPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()) + $"{OS_SEPARATOR}db{OS_SEPARATOR}locale";
             string[] files = Directory.GetFiles(localeDbPath);
 
             if (files.Length > 0) GenerateLocalization(files);
@@ -622,11 +622,11 @@ namespace AllTheClothes
 
             Directory.CreateDirectory("ATC_Dumps");
 
-            File.WriteAllText("ATC_Dumps\\localeJson.json", localeJson);
-            File.WriteAllText("ATC_Dumps\\customizationJson.json", customizationJson);
-            File.WriteAllText("ATC_Dumps\\characterJson.json", characterJson);
-            File.WriteAllText("ATC_Dumps\\suitsRagmanJson.json", ragmanJson);
-            File.WriteAllText("ATC_Dumps\\suitsFenceJson.json", fenceJson);
+            File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}localeJson.json", localeJson);
+            File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}customizationJson.json", customizationJson);
+            File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}characterJson.json", characterJson);
+            File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}suitsRagmanJson.json", ragmanJson);
+            File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}suitsFenceJson.json", fenceJson);
         }
         
     }

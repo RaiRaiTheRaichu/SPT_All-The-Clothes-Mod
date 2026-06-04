@@ -1,4 +1,4 @@
-# All The Clothes v3.0.0
+# All The Clothes v3.0.1
 Author: RaiRaiTheRaichu
 
 ### ---BUILT FOR SPT VERSION 4.0.13---
@@ -150,6 +150,9 @@ If you're updating from an older version of the mod, please be sure to delete th
 	- Added config to replace the vanilla requirement of Ref loyalty levels with Ragman (on by default)
 - Added config option to add trades for the prestige-only clothing and allow selecting the prestige voices
 - Locales updated to have a basic category for each clothing item
+
+#### v3.0.1 Changelog
+- Fixed an OS-dependent issue with loading database and config files
 
 ## ---SWAPPING HEADS---
 
