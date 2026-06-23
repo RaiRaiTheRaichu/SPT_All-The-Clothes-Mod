@@ -68,17 +68,6 @@ namespace AllTheClothes
                 UnlockPrestigeClothing();
             }
 
-            // Clear all requirements from vanilla suit offers
-            if (ModConfig.AllPMCClothesFree)
-            {
-                UnlockVanillaClothing();
-            }
-
-            if (ModConfig.RemoveRefRequirement)
-            {
-                ChangeLoyaltyRequirements();
-            }
-
             // Unlock clothing, heads, and voices for Scavs and Bear/Usecs
             UnlockFactionalCustomization();
 
@@ -117,7 +106,18 @@ namespace AllTheClothes
             {
                 ReplaceTraderSuitOffers();
             }
-            
+
+            // Clear all requirements from vanilla suit offers
+            if (ModConfig.AllPMCClothesFree)
+            {
+                UnlockVanillaClothing();
+            }
+
+            if (ModConfig.RemoveRefRequirement)
+            {
+                ChangeLoyaltyRequirements();
+            }
+
             // Add localization entries
             var localeDbPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()) + $"{OS_SEPARATOR}db{OS_SEPARATOR}locale";
             string[] files = Directory.GetFiles(localeDbPath);
