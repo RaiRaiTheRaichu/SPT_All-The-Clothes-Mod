@@ -248,6 +248,14 @@
 				"shaders",
 				"cubemaps"
 		  	]
+		},
+		{
+			"key": "assets/content/characters/character/alltheclothes/top_boss_birdeye_alt.skin.bundle",
+			"dependencyKeys": 
+			[
+				"shaders",
+				"cubemaps"
+		  	]
 		}
 	]
 }
