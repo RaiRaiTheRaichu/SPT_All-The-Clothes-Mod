@@ -1,4 +1,4 @@
-# All The Clothes v3.0.1
+# All The Clothes v3.1.0
 Author: RaiRaiTheRaichu
 
 ### ---BUILT FOR SPT VERSION 4.0.13---
@@ -153,6 +153,12 @@ If you're updating from an older version of the mod, please be sure to delete th
 
 #### v3.0.1 Changelog
 - Fixed an OS-dependent issue with loading database and config files
+
+#### v3.1.0 Changelog
+- Added trade entries for three missing Battlepass Season 0 clothing items
+- Fixed an initialization error when loading into a raid wearing Knight's top
+- Added new variant of Birdeye's top (without Comtacs)
+- Fixed an issue where some clothing options were skipped when making all clothing free
 
 ## ---SWAPPING HEADS---
 
