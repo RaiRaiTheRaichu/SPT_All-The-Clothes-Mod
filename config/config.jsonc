@@ -1459,6 +1459,97 @@
 				]
 			}
 		},
+		"Usec_kit_upper_carinthia_softshell_bp_01":
+		{ // Localized name: USEC Mission (MultiCam)
+			"availability": true,
+			"suiteTradeID": "6a3dccc8af0b26a5bc10f628",
+			"kitToSell": "67ac8b19e4d14ccd6005de8c",
+			"ragman": true,
+			"tradeRequirements":
+			{
+				"loyaltyLevel": 1,
+				"profileLevel": 16,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements":
+				[
+				],
+				"questRequirements":
+				[
+				],
+				"itemRequirements":
+				[
+					{
+						"count": 200000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements":
+				[
+				]
+			}
+		},
+		"Bear_upper_Phoenix_bp_01":
+		{ // Localized name: BEAR Phoenix (Green)
+			"availability": true,
+			"suiteTradeID": "6a3dcd1ccfdad85b48797246",
+			"kitToSell": "67ac8a85e4d14ccd6005de8a",
+			"ragman": true,
+			"tradeRequirements":
+			{
+				"loyaltyLevel": 2,
+				"profileLevel": 29,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements":
+				[
+				],
+				"questRequirements":
+				[
+				],
+				"itemRequirements":
+				[
+					{
+						"count": 800000,
+						"_tpl": "5449016a4bdc2d6f028b456f"
+					}
+				],
+				"achievementRequirements":
+				[
+				]
+			}
+		},
+		"pmc_gladiator":
+		{ // Localized name: Gladiator t-shirt
+			"availability": true,
+			"suiteTradeID": "6a3dcd63146f8a665d2c0b4c",
+			"kitToSell": "67af2ddb551084dbef0f317a",
+			"ragman": true,
+			"tradeRequirements":
+			{
+				"loyaltyLevel": 1,
+				"profileLevel": 0,
+				"standing": 0,
+				"prestigeLevel": 0,
+				"skillRequirements":
+				[
+				],
+				"questRequirements":
+				[
+				],
+				"itemRequirements":
+				[
+					{
+						"count": 50,
+						"_tpl": "5d235b4d86f7742e017bc88a"
+					}
+				],
+				"achievementRequirements":
+				[
+					"6514184ec31fcb0e163577d2"
+				]
+			}
+		},
 		"pmc_arena_acs4":
 		{ // Localized name: Grenadier t-shirt
 			"availability": true,
