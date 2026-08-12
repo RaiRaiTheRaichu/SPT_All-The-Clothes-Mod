@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>3.1.0</Version>
-    <OutputPath>bin\$(Configuration)\SPT\user\mods\$(ProjectName)\$(AssemblyName)\</OutputPath>
+    <Version>3.2.0</Version>
+    <OutputPath>bin\$(Configuration)\SPT_Runtime\user\mods\$(ProjectName)\$(AssemblyName)\</OutputPath>
 	<PreserveCompilationContext>false</PreserveCompilationContext>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
@@ -34,9 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-    <PackageReference Include="SPTarkov.Common" Version="4.0.0" />
-    <PackageReference Include="SPTarkov.DI" Version="4.0.0" />
-    <PackageReference Include="SPTarkov.Reflection" Version="4.0.0" />
-    <PackageReference Include="SPTarkov.Server.Core" Version="4.0.0" />
+    <PackageReference Include="SPTarkov.Common" Version="4.1.0" />
+    <PackageReference Include="SPTarkov.DI" Version="4.1.0" />
+    <PackageReference Include="SPTarkov.Reflection" Version="4.1.0" />
+    <PackageReference Include="SPTarkov.Server.Core" Version="4.1.0" />
   </ItemGroup>
 </Project>

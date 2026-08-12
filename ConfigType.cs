@@ -40,7 +40,7 @@ namespace AllTheClothes
         public int profileLevel { get; set; }
         public int standing { get; set; }
         public int prestigeLevel { get; set; }
-        public List<string>? skillRequirements { get; set; }
+        public List<SkillRequirement>? skillRequirements { get; set; }
         public List<string>? questRequirements { get; set; }
         public List<ItemRequirement>? itemRequirements { get; set; }
         public List<string>? achievementRequirements { get; set; }

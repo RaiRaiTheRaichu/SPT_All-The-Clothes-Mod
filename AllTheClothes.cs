@@ -2,65 +2,48 @@
 using SPTarkov.Server.Core.DI;
 using SPTarkov.Server.Core.Helpers;
 using SPTarkov.Server.Core.Models.Common;
-using SPTarkov.Server.Core.Models.Eft.Common;
 using SPTarkov.Server.Core.Models.Eft.Common.Tables;
 using SPTarkov.Server.Core.Models.Spt.Mod;
-using SPTarkov.Server.Core.Models.Utils;
-using SPTarkov.Server.Core.Servers;
+using SPTarkov.Common.Models.Logging;
+using SPTarkov.Server.Core.Helpers.Server;
 using System.Reflection;
-using SPTarkov.Server.Core.Models.Logging;
-using SPTarkov.Server.Core.Services;
-using System.Reflection.Metadata;
+using SPTarkov.Server.Core.Models.Spt.Tables;
+using SPTarkov.Server.Core.Models.Eft.Common;
 
 namespace AllTheClothes
 {
-    public record ModMetadata : AbstractModMetadata
+    public record AllTheClothes : IModMetadata
     {
-        public override string ModGuid { get; init; } = "com.rairaitheraichu.alltheclothes";
-        public override string Name { get; init; } = "AllTheClothes";
-        public override string Author { get; init; } = "RaiRaiTheRaichu";
-        public override List<string>? Contributors { get; init; }
-        public override SemanticVersioning.Version Version { get; init; } = new("3.1.0");
-        public override SemanticVersioning.Range SptVersion { get; init; } = new("~4.0.0");
-        public override List<string>? Incompatibilities { get; init; }
-        public override Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
-        public override string? Url { get; init; } = "https://github.com/RaiRaiTheRaichu/SPT_All-The-Clothes-Mod";
-        public override bool? IsBundleMod { get; init; } = true;
-        public override string? License { get; init; } = "NCSA";
+        public string ModGuid { get; init; } = "com.rairaitheraichu.alltheclothes";
+        public string Name { get; init; } = "AllTheClothes";
+        public string Author { get; init; } = "RaiRaiTheRaichu";
+        public List<string>? Contributors { get; init; }
+        public SemanticVersioning.Version Version { get; init; } = new("3.2.0");
+        public SemanticVersioning.Range SptVersion { get; init; } = new("~4.1.0");
+        public List<string>? Incompatibilities { get; init; }
+        public Dictionary<string, SemanticVersioning.Range>? ModDependencies { get; init; }
+        public string? Url { get; init; } = "https://github.com/RaiRaiTheRaichu/SPT_All-The-Clothes-Mod";
+        public string? License { get; init; } = "NCSA";
+        public bool HasPrepatcher { get; init; } = false;
     }
 
-    [Injectable(TypePriority = OnLoadOrder.PostDBModLoader + 1)]
+    [Injectable(TypePriority = OnLoadOrder.Preload)]
     public class DatabaseEdit(
-        DatabaseServer databaseServer,
-        ConfigServer configServer,
-        DatabaseService databaseService,
+        TradersTable tradersTable,
+        LocaleTable localeTable,
+        TemplateTable templateTable,
         ISptLogger<DatabaseEdit> logger,
         ModHelper modHelper) : IOnLoad
     {
-        private readonly DatabaseServer _databaseServer = databaseServer;
-        private readonly ConfigServer _configServer = configServer;
         private readonly ISptLogger<DatabaseEdit> _logger = logger;
-        private readonly ModHelper _modHelper = modHelper;
-
         private readonly char OS_SEPARATOR = System.IO.Path.DirectorySeparatorChar;
-
         private ConfigType ModConfig;
 
-        public Task OnLoad()
+        public Task OnLoadAsync(CancellationToken cancellationToken)
         {
             // Load config
-            var modPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
-            ModConfig = _modHelper.GetJsonDataFromFile<ConfigType>(modPath + OS_SEPARATOR + "config", "config.jsonc");
-
-            // Handling for SPT version < 4.0.2, where Fence can not use the Services menu
-            var SPTVersion = SPTarkov.Server.Core.Utils.ProgramStatics.SPT_VERSION();
-            if (SPTVersion.Patch < 2)
-            {
-                _logger.LogWithColor("[AllTheClothes] NOTICE: On SPT versions prior to 4.0.2, clothing can only be sold on Ragman regardless of config settings." +
-                             "\nServices tab on Fence is unavailable on this version, please update your SPT server to the latest version to enable Fence's services!" +
-                             "\nDo not report this as a bug.", LogTextColor.Yellow);
-                ModConfig.UseRagmanInsteadOfFence = true;
-            }
+            var modPath = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly());
+            ModConfig = modHelper.GetJsonDataFromFile<ConfigType>(modPath + OS_SEPARATOR + "config", "config.jsonc");
 
             // Add trades for the prestige clothes, allow prestige voices to be selected by default
             if (ModConfig.UnlockPrestigeOptions)
@@ -96,6 +79,8 @@ namespace AllTheClothes
                 GenerateKits();
             }
 
+            cancellationToken.ThrowIfCancellationRequested();
+
             // Create trader offers
             if (ModConfig.needTrade.Count > 0)
             {
@@ -118,8 +103,10 @@ namespace AllTheClothes
                 ChangeLoyaltyRequirements();
             }
 
+            cancellationToken.ThrowIfCancellationRequested();
+
             // Add localization entries
-            var localeDbPath = _modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()) + $"{OS_SEPARATOR}db{OS_SEPARATOR}locale";
+            var localeDbPath = modHelper.GetAbsolutePathToModFolder(Assembly.GetExecutingAssembly()) + $"{OS_SEPARATOR}db{OS_SEPARATOR}locale";
             string[] files = Directory.GetFiles(localeDbPath);
 
             if (files.Length > 0) GenerateLocalization(files);
@@ -131,7 +118,7 @@ namespace AllTheClothes
 
         private Task UnlockVanillaClothing()
         {
-            var ragmanSuits = _databaseServer.GetTables().Traders["5ac3b934156ae10c4430e83c"].Suits;
+            var ragmanSuits = tradersTable["5ac3b934156ae10c4430e83c"].Suits;
             if (ragmanSuits == null) return Task.CompletedTask;
 
             foreach (var suitOffer in ragmanSuits)
@@ -155,9 +142,9 @@ namespace AllTheClothes
 
         private Task UnlockPrestigeClothing()
         {
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
-            var customizationStorage = _databaseServer.GetTables().Templates.CustomisationStorage;
-            var ragmanSuits = _databaseServer.GetTables().Traders["5ac3b934156ae10c4430e83c"].Suits;
+            var customizationDatabase = templateTable.Customization;
+            var customizationStorage = templateTable.CustomisationStorage;
+            var ragmanSuits = tradersTable["5ac3b934156ae10c4430e83c"].Suits;
 
             // Add trades for the Hawaiian shirts
             foreach (var prestigeSuit in ModConfig.prestigeClothes)
@@ -188,7 +175,7 @@ namespace AllTheClothes
 
         private Task ChangeLoyaltyRequirements()
         {
-            var ragmanSuits = _databaseServer.GetTables().Traders["5ac3b934156ae10c4430e83c"].Suits;
+            var ragmanSuits = tradersTable["5ac3b934156ae10c4430e83c"].Suits;
 
             foreach (Suit suit in ragmanSuits)
             {
@@ -203,9 +190,9 @@ namespace AllTheClothes
 
         private Task UnlockFactionalCustomization()
         {
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
-            var storageDatabase = _databaseServer.GetTables().Templates.CustomisationStorage;
-            var characterDatabase = _databaseServer.GetTables().Templates.Character;
+            var customizationDatabase = templateTable.Customization;
+            var storageDatabase = templateTable.CustomisationStorage;
+            var characterDatabase = templateTable.Character;
 
             foreach (var entry in customizationDatabase)
             {
@@ -331,7 +318,7 @@ namespace AllTheClothes
 
         private Task GenerateHands()
         {
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
+            var customizationDatabase = templateTable.Customization;
 
             foreach (var handEntry in ModConfig.handEntries)
             {
@@ -359,13 +346,13 @@ namespace AllTheClothes
                             Rcid = ""
                         },
                         IntegratedArmorVest = false,
-                        WatchPosition = new XYZ()
+                        WatchPosition = new Vector3()
                         {
                             X = 0,
                             Y = 0,
                             Z = 0
                         },
-                        WatchRotation = new XYZ()
+                        WatchRotation = new Vector3()
                         {
                             X = 0,
                             Y = 0,
@@ -382,9 +369,9 @@ namespace AllTheClothes
 
         private Task GenerateHeads()
         {
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
-            var storageDatabase = _databaseServer.GetTables().Templates.CustomisationStorage;
-            var characterDatabase = _databaseServer.GetTables().Templates.Character;
+            var customizationDatabase = templateTable.Customization;
+            var storageDatabase = templateTable.CustomisationStorage;
+            var characterDatabase = templateTable.Character;
 
             foreach (var headEntry in ModConfig.headEntries)
             {
@@ -412,8 +399,8 @@ namespace AllTheClothes
 
         private Task GenerateClothing()
         {
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
-            var characterDatabase = _databaseServer.GetTables().Templates.Character;
+            var customizationDatabase = templateTable.Customization;
+            var characterDatabase = templateTable.Character;
 
             foreach (var customizationEntry in ModConfig.customEntries)
             {
@@ -427,8 +414,8 @@ namespace AllTheClothes
 
         private Task GenerateKits()
         {
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
-            var characterDatabase = _databaseServer.GetTables().Templates.Character;
+            var customizationDatabase = templateTable.Customization;
+            var characterDatabase = templateTable.Character;
 
             if (ModConfig.needKit.tops != null)
             {
@@ -494,8 +481,6 @@ namespace AllTheClothes
 
         private Task GenerateTraderAssorts()
         {
-            var traderDatabase = _databaseServer.GetTables().Traders;
-
             foreach (var tradeEntry in ModConfig.needTrade)
             {
                 if (!tradeEntry.Value.availability) continue;
@@ -534,14 +519,14 @@ namespace AllTheClothes
                     }
                 };
 
-                traderDatabase[traderId].Suits ??= new List<Suit>();
+                tradersTable[traderId].Suits ??= new List<Suit>();
 
-                traderDatabase[traderId].Suits.Add(newSuitOffer);
+                tradersTable[traderId].Suits.Add(newSuitOffer);
             }
 
-            if (traderDatabase["579dc571d53a0658a154fbec"].Suits != null)
+            if (tradersTable["579dc571d53a0658a154fbec"].Suits != null)
             {
-                traderDatabase["579dc571d53a0658a154fbec"].Base.CustomizationSeller = true;
+                tradersTable["579dc571d53a0658a154fbec"].Base.CustomizationSeller = true;
             }
 
             return Task.CompletedTask;
@@ -549,7 +534,6 @@ namespace AllTheClothes
 
         private Task ReplaceTraderSuitOffers()
         {
-            var traderDatabase = _databaseServer.GetTables().Traders;
             Dictionary<MongoId, List<MongoId>> tradesToRemove = new Dictionary<MongoId, List<MongoId>>();
             foreach (var tradeEntry in ModConfig.replaceTrade)
             {
@@ -562,7 +546,7 @@ namespace AllTheClothes
 
             foreach (var trader in tradesToRemove.Keys)
             {
-                List<Suit> newSuitList = traderDatabase[trader].Suits.FindAll(offer => !tradesToRemove[trader].Contains(offer.SuiteId));
+                List<Suit> newSuitList = tradersTable[trader].Suits.FindAll(offer => !tradesToRemove[trader].Contains(offer.SuiteId));
                 
                 foreach (var replacementOffer in ModConfig.replaceTrade)
                 {
@@ -571,7 +555,7 @@ namespace AllTheClothes
                     newSuitList.Add(replacementOffer.Value);
                 }
 
-                traderDatabase[trader].Suits = newSuitList;
+                tradersTable[trader].Suits = newSuitList;
             }
 
             return Task.CompletedTask;
@@ -586,9 +570,9 @@ namespace AllTheClothes
                 string localePath = System.IO.Path.GetDirectoryName(file);
                 string localeKey = System.IO.Path.GetFileNameWithoutExtension(file).ToLower();
 
-                var localeFile = _modHelper.GetJsonDataFromFile<Dictionary<String, ModLocaleType>>(localePath, localeJson);
+                var localeFile = modHelper.GetJsonDataFromFile<Dictionary<String, ModLocaleType>>(localePath, localeJson);
 
-                if (databaseService.GetLocales().Global.TryGetValue(localeKey, out var lazyloadedValue))
+                if (localeTable.Global.TryGetValue(localeKey, out var lazyloadedValue))
                 {
                     lazyloadedValue.AddTransformer(lazyloadedLocaleData =>
                     {
@@ -609,10 +593,10 @@ namespace AllTheClothes
         
         private void GenerateDebugLog()
         {
-            var localeDatabase = _databaseServer.GetTables().Locales.Global;
-            var customizationDatabase = _databaseServer.GetTables().Templates.Customization;
-            var characterDatabase = _databaseServer.GetTables().Templates.Character;
-            var traderDatabase = _databaseServer.GetTables().Traders;
+            var localeDatabase = localeTable.Global;
+            var customizationDatabase = templateTable.Customization;
+            var characterDatabase = templateTable.Character;
+            var traderDatabase = tradersTable;
 
             var localeJson = Newtonsoft.Json.JsonConvert.SerializeObject(localeDatabase["en"]);
             var customizationJson = Newtonsoft.Json.JsonConvert.SerializeObject(customizationDatabase);
@@ -628,6 +612,5 @@ namespace AllTheClothes
             File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}suitsRagmanJson.json", ragmanJson);
             File.WriteAllText($"ATC_Dumps{OS_SEPARATOR}suitsFenceJson.json", fenceJson);
         }
-        
     }
 }

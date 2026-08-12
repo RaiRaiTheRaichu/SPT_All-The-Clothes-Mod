@@ -1,7 +1,7 @@
-# All The Clothes v3.1.0
+# All The Clothes v3.2.0
 Author: RaiRaiTheRaichu
 
-### ---BUILT FOR SPT VERSION 4.0.13---
+### ---BUILT FOR SPT VERSION 4.1.2---
 
 Written from the ground up for SPT 4.0+, All The Clothes is back with more options than ever.
 Included out of the box are all Arena and Battlepass-only clothing, integrated into the trader services menu.
@@ -26,14 +26,14 @@ Feel free to leave a comment or contact me using Discord if you have any suggest
 ## ---BUILD INFO---
 
 Requirements:
-- .NET 9.0
+- .NET 10.0
 
 The following packages installed:
 - Newtonsoft.Json (`13.0.4`)
-- SPTarkov.Common (`4.0.0`)
-- SPTarkov.DI (`4.0.0`)
-- SPTarkov.Reflection (`4.0.0`)
-- SPTarkov.Server.Core (`4.0.0`)
+- SPTarkov.Common (`4.1.0`)
+- SPTarkov.DI (`4.1.0`)
+- SPTarkov.Reflection (`4.1.0`)
+- SPTarkov.Server.Core (`4.1.0`)
 (You can select `Manage NuGet Packages...` within the Dependencies tab of Visual Studio to install them. Pay special attention to the version being installed, mods compiled with packages marked `4.0.13`, for example, will not run on any version below that.)
 
 Open AllTheClothes.sln with Visual Studio and build the mod in Release mode.
@@ -159,6 +159,9 @@ If you're updating from an older version of the mod, please be sure to delete th
 - Fixed an initialization error when loading into a raid wearing Knight's top
 - Added new variant of Birdeye's top (without Comtacs)
 - Fixed an issue where some clothing options were skipped when making all clothing free
+
+#### v3.2.0 Changelog
+- Update for compatibility with SPT 4.1.0+
 
 ## ---SWAPPING HEADS---
 
